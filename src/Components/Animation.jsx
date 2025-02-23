@@ -32,10 +32,9 @@ const GradientAnimation = () => {
   return (
     <a
       href="/"
-      style={containerStyle}
-      className="flex items-center justify-center h-screen"
+      className="flex w-full  items-center justify-center h-screen overflow-hidden"
     >
-      <div className="text-4xl font-bold flex flex-row text-white">
+      <div className="text-4xl font-bold flex flex-row text-white animate-fade-in-slow">
         <div className="text-9xl">ART</div>
         <div className="text-4xl font-bold [writing-mode:vertical-lr] text-center h-[9rem]">
           Ance

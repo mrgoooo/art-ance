@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import GradientAnimation from "./Animation";
+import Image from "../assets/images/cuttedlogo.png";
 
 export default function HomePage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,7 +10,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Navbar */}
       <header className="flex justify-between items-center p-4 bg-black">
-        <div className="text-2xl font-bold">ARTance</div>
+        <div className="text-2xl font-bold">
+          <img src={Image} className="h-8 w-8"></img>
+        </div>
         <div className="hidden sm:block mx-auto">
           <ul className="flex flex-center space-x-12 p-3">
             <li>

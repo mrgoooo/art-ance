@@ -1,28 +1,39 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import myImagee from "../assets/images/helpp.jpg";
+import Line from "./Line";
+
 const slides = [
   {
     step: "Step 1",
-    title: "Discover New Horizons",
+    title: "Onboarding",
     description:
-      "Explore breathtaking destinations with our expert travel guides. Start your adventure today!",
+      "Współpracę zaczynamy od analizy potrzeb biznesowych klienta oraz wymagań SEO, opracowujemy mapę witryny i wstępne szkice (wireframes). Następnie umawiamy się na spotkanie onboardingowe, które pozwala dopracować szczegóły.",
     image:
       "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     cta: "Learn More",
   },
   {
     step: "Step 2",
-    title: "Summer Collection 2024",
+    title: "Design Projektu",
     description:
-      "Shop our latest summer fashion lineup. Fresh styles for every occasion now available.",
+      "Korzystając z zebranych informacji, przygotowujemy wstępny brief projektowy i opracowujemy projekt graficzny. Po akceptacji przez klienta przechodzimy do fazy deweloperskiej.",
     image: "https://picsum.photos/id/240/800/400",
     cta: "Shop Now",
   },
   {
     step: "Step 3",
-    title: "Tech Innovation Summit",
+    title: "Rozwój",
     description:
-      "Join industry leaders discussing the future of AI and blockchain technology. Register now for early bird tickets.",
+      "Realizujemy projekt techniczny, przeprowadzając testy jakości (QA) na każdym etapie – od pierwszej wersji po końcowe poprawki. Optymalizujemy stronę pod kątem SEO, technikaliów i szybkości działania.",
+    image: "https://picsum.photos/id/240/800/400", // Example with local image require
+    cta: "Register Today",
+  },
+  {
+    step: "Step 4",
+    title: "Publikowanie",
+    description:
+      "Po przedstawieniu gotowej strony klientowi i dokonaniu ostatecznych poprawek następuje publikacja witryny. Podpisujemy umowy na dalsze wsparcie techniczne oraz przesyłamy podziękowania za współpracę.",
     image: "https://picsum.photos/id/240/800/400", // Example with local image require
     cta: "Register Today",
   },
@@ -66,11 +77,14 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center bg-black">
-      <div className=" w-3/4 h-screen  overflow-hidden">
+    <div className="w-full lg:h-screen  bg-black flex flex-col items-center justify-center  ">
+      <div className="w-3/4">
+        <Line text="PROCES" />
+      </div>
+      <div className=" w-3/4 h-full  overflow-hidden">
         {/* Slajdy */}
         <div
-          className="flex w-full transition-transform duration-1000 ease-in-out"
+          className="flex  w-full transition-transform duration-1000 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {slides.map((slide, index) => (
@@ -79,22 +93,41 @@ const Carousel = () => {
               className="w-full flex-shrink-0 p-4" // Added padding for spacing
             >
               <p className="text-white">{slide.step}</p>
-              <div className="flex h-full items-center">
+              <div className="flex items-center py-9">
                 {/* Text Content - Left Side */}
-                <div className="w-1/2 pr-8">
+                <div className="w-2/3 pr-8">
                   {" "}
                   {/* Added right padding for spacing */}
-                  <h2 className="text-4xl  text-white font-bold mb-4">
-                    {slide.title}
-                  </h2>
-                  <p className="text-lg text-gray-600">{slide.description}</p>
+                  <div className="flex items-center gap-4">
+                    <h2 className=" text-5xl md:text-7xl text-white font-bold">
+                      {slide.title}
+                    </h2>
+                    <svg
+                      width="97"
+                      height="97"
+                      viewBox="0 0 97 97"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-28 h-28"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M72.7503 24.25H24.2503V32.3334H58.9507L22.5757 68.7084L28.2915 74.4241L64.6669 38.0487V72.75H72.7503V24.25Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p className=" pt-10 text-gray-600 text-2xl">
+                    {slide.description}
+                  </p>
                   {/* Add additional buttons or elements if needed */}
                 </div>
 
                 {/* Image - Right Side */}
-                <div className="w-1/2 h-full">
+                <div className="w-1/3 h-full">
                   <img
-                    src={slide.image}
+                    src={myImagee}
                     alt={`Slide ${index}`}
                     className="w-full h-full object-cover rounded-lg" // Added rounded corners
                   />
