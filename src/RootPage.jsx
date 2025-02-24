@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import GradientAnimation from "./Components/Animation";
 import Image from "./assets/images/cuttedlogo.png";
 import HomePage from "./Components/HomePage";
+import OfferPage from "./Other/Oferta";
 
 export default function RootPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,13 +17,19 @@ export default function RootPage() {
             <HomePage />
           </div>
         );
+      case "Oferta":
+        return (
+          <div className=" w-full flex justify-center animate-fade-in-slow ">
+            <OfferPage />
+          </div>
+        );
       default:
         return <h2 className="text-center">Nie znaleziono strony</h2>;
     }
   };
 
   return (
-    <div className=" w-full bg-slate-400 text-white flex flex-col ">
+    <div className=" w-full bg-black text-white flex flex-col ">
       {/* Navbar */}
       <header className="w-full flex justify-between items-center p-4 bg-black">
         <div className="text-2xl font-bold">
@@ -58,9 +65,8 @@ export default function RootPage() {
       </header>
 
       {/* Main Content */}
-      <main className="flex flex-col items-center justify-center w-full">
-        <GradientAnimation />
-        <div className="mt-4 bg-slate-500 w-full">{renderComponent()}</div>
+      <main className=" relative flex flex-col items-center justify-center w-full">
+        <div className="w-full">{renderComponent()}</div>
       </main>
 
       {/* Sidebar */}

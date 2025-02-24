@@ -17,7 +17,7 @@ function HomePage() {
     <div>
       <div>
         <section id="caption">
-          <ShineText />
+          <GradientAnimation />
         </section>
 
         <section id="grid">
