@@ -19,7 +19,7 @@ const GradientAnimation = () => {
   }, []);
 
   const containerStyle = {
-    width: "100vw",
+    width: "100%",
     height: "100vh",
     transition: "background 0.1s ease-out",
     background: `radial-gradient(
@@ -32,6 +32,7 @@ const GradientAnimation = () => {
   return (
     <a
       href="/"
+      style={containerStyle}
       className="flex w-full  items-center justify-center h-screen overflow-hidden"
     >
       <div className="text-4xl font-bold flex flex-row text-white animate-fade-in-slow">
