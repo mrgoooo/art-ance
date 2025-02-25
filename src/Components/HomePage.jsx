@@ -11,6 +11,7 @@ import OpinionsCarousel from "./OpinionsCarousel";
 import GradientAnimation from "./Animation";
 import HeroHeading from "./Ofertapage";
 import Kontakt from "./Kontakt";
+import LastFooter from "./LastFooter";
 
 function HomePage() {
   return (
@@ -20,11 +21,11 @@ function HomePage() {
           <GradientAnimation />
         </section>
 
-        <section id="caption">
+        <section id="shine_text">
           <ShineText />
         </section>
 
-        <section id="grid">
+        <section id="stats">
           <Grid />
         </section>
 
@@ -40,15 +41,15 @@ function HomePage() {
           <Carousel />
         </section>
 
-        <section id="dssd">
+        <section id="whyus">
           <WhyComponent />
         </section>
 
-        <section id="dvd">
+        <section id="opinions">
           <OpinionsCarousel />
         </section>
 
-        <section id="dvd">
+        <section id="kontakt">
           <Kontakt />
         </section>
       </div>

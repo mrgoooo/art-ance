@@ -4,11 +4,12 @@ import GradientAnimation from "./Components/Animation";
 import Image from "./assets/images/cuttedlogo.png";
 import HomePage from "./Components/HomePage";
 import OfferPage from "./Other/Oferta";
-import LastFooter from "./Other/LastFooter";
+import Kontakt from "./Components/Kontakt";
+import LastFooter from "./Components/LastFooter";
 
 export default function RootPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [selectedSection, setSelectedSection] = useState("");
+  const [selectedSection, setSelectedSection] = useState("Home");
 
   const renderComponent = () => {
     switch (selectedSection) {
