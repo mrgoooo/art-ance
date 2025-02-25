@@ -9,8 +9,8 @@ import Carousel from "./Carousel";
 import WhyComponent from "./WhyComponent";
 import OpinionsCarousel from "./OpinionsCarousel";
 import GradientAnimation from "./Animation";
-import Nowe from "./Nowe";
 import HeroHeading from "./Ofertapage";
+import Kontakt from "./Kontakt";
 
 function HomePage() {
   return (
@@ -18,6 +18,10 @@ function HomePage() {
       <div>
         <section id="caption">
           <GradientAnimation />
+        </section>
+
+        <section id="caption">
+          <ShineText />
         </section>
 
         <section id="grid">
@@ -45,7 +49,7 @@ function HomePage() {
         </section>
 
         <section id="dvd">
-          <Nowe></Nowe>
+          <Kontakt />
         </section>
       </div>
     </div>

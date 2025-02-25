@@ -15,13 +15,23 @@ export default {
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-out",
-        "fade-in-slow": "fadeIn 2s ease-out", // 5s to bardzo długo, 3s to już ekstremum
+        "fade-in-slow": "fadeInn 2s ease-out", // 5s to bardzo długo, 3s to już ekstremum
       },
       keyframes: {
         fadeIn: {
           "0%": {
             opacity: "0",
             transform: "translateY(10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        fadeInn: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30px)",
           },
           "100%": {
             opacity: "1",

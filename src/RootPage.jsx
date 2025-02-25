@@ -4,6 +4,7 @@ import GradientAnimation from "./Components/Animation";
 import Image from "./assets/images/cuttedlogo.png";
 import HomePage from "./Components/HomePage";
 import OfferPage from "./Other/Oferta";
+import LastFooter from "./Other/LastFooter";
 
 export default function RootPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function RootPage() {
                   <button
                     className={`transition duration-300 ${
                       selectedSection === section
-                        ? "text-white/60"
+                        ? "text-white hover:text-neutral-500"
                         : "text-white hover:text-neutral-500"
                     }`}
                     onClick={() => setSelectedSection(section)}
@@ -103,6 +104,9 @@ export default function RootPage() {
         <button className="p-5" onClick={() => setIsSidebarOpen(false)}>
           HIDE &gt;
         </button>
+      </div>
+      <div className="flex justify-center">
+        <LastFooter />
       </div>
     </div>
   );

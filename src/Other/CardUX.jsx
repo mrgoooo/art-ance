@@ -3,8 +3,8 @@ import Image from "../assets/images/UX.png";
 
 function CardUX() {
   return (
-    <div className=" w-[60%] bg-gradient-to-b from-[#c4c4c4] to-[#f3ae69] rounded-[20px] justify-start items-start inline-flex">
-      <div className="flex flex-col justify-between  bg-white w-3/4 ">
+    <div className=" w-[60%] bg-gradient-to-b from-[#c4c4c4] to-[#f3ae69] rounded-[20px] justify-start items-start inline-flex mr-3 mt-8 mb-8">
+      <div className="flex flex-col justify-between   w-3/4 ">
         <div className="px-8 text-black text-4xl font-normal font-['Inter'] leading-relaxed">
           UX/UI Design
         </div>
@@ -14,7 +14,7 @@ function CardUX() {
           wrażenia na każdym kroku interakcji z Twoją stroną.
         </div>
 
-        <div className="pb-8 pl-12 flex justify-start bg-slate-200">
+        <div className="pb-8 pl-12 flex justify-start">
           <ArrowButtonComp />
         </div>
       </div>
