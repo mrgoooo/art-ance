@@ -1,9 +1,9 @@
 function Pytania({ onClick }) {
   return (
     <div className="flex flex-col h-[300px] justify-end pb-16">
-      <h2 className="text-center text-7xl">Masz pytania?</h2>
+      <h2 className="text-center text-6xl">Masz pytania?</h2>
       <button
-        className="px-9 py-3 mt-10 flex justify-center items-center border-2 rounded-full"
+        className="px-2 py-3 mt-10 flex justify-center items-center border-2 rounded-full"
         onClick={onClick} // Funkcja aktywacji przekazana jako onClick
       >
         <div>

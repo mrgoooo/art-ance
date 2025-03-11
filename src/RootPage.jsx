@@ -6,6 +6,7 @@ import HomePage from "./Components/HomePage";
 import OfferPage from "./Other/Oferta";
 import Kontakt from "./Components/Kontakt";
 import LastFooter from "./Components/LastFooter";
+import ONas from "./ONas/ONas";
 
 export default function RootPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,6 +26,13 @@ export default function RootPage() {
             <OfferPage />
           </div>
         );
+      case "O Nas":
+        return (
+          <div className=" w-full flex justify-center animate-fade-in-slow ">
+            <ONas />
+          </div>
+        );
+
       default:
         return <h2 className="text-center">Nie znaleziono strony</h2>;
     }

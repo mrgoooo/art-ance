@@ -2,6 +2,7 @@ function ArrowButtonComp({
   onClick,
   textColor = "text-white/60",
   arrowColor = "#E8E8E8",
+  text = "Dowiedz się więcej",
 }) {
   return (
     <button
@@ -9,7 +10,7 @@ function ArrowButtonComp({
       onClick={onClick} // Funkcja aktywacji przekazana jako onClick
     >
       <div>
-        <h2 className={`text-xl ${textColor}`}>Dowiedz się więcej</h2>
+        <h2 className={`text-xl ${textColor}`}>{text}</h2>
       </div>
       <div className="pt-1 pl-1">
         <svg
