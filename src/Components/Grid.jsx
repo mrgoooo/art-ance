@@ -2,33 +2,47 @@ import Line from "./Line";
 const Grid = () => {
   return (
     <section className="flex justify-center lg:h-screen w-full bg-black flex-col items-center">
-      <div className="w-3/4">
-        <Line text="DANE" />
+      <div className="w-[90%] flex sm:flex-col sm:w-3/4 pt-8">
+        <div className="w-28 pb-8 sm:hidden">
+          <div class="flex flex-col items-center justify-center">
+            <div class="[writing-mode:vertical-rl] origin-center rotate-180 h-[85%] text-left pl-4 ">
+              <span class="text-[50px] tracking-tighter">
+                NUMBERS by ARTANCE.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="hidden sm:block">
+          <Line text="DANE" />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2  ">
-          <div className="flex flex-col  text-white justify-center items-center p-24">
+          <div className="flex flex-col  text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-8xl pb-8">200+</div>
-              <div className="text-2xl text-white/60">
+              <div className=" text-7xl sm:text-8xl sm:pb-8">200+</div>
+              <div className=" text-xl sm:text-2xl text-white/60">
                 Zrealizowanych projektów
               </div>
-              <div className="text-2xl text-white/60">W Polsce i zagranicą</div>
+              <div className="text-xl sm:text-2xl text-white/60">
+                W Polsce i zagranicą
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col text-white justify-center items-center p-24">
+          <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-8xl pb-8">10+</div>
-              <div className="text-2xl text-white/60">
+              <div className="text-7xl sm:text-8xl sm:pb-8">10+</div>
+              <div className="text-xl sm:text-2xl text-white/60">
                 Lat doświadczenia w <br />
                 branży.
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col text-white justify-center items-center p-24">
+          <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-8xl pb-8">14</div>
-              <div className="text-2xl text-white/60">
+              <div className="text-7xl sm:text-8xl sm:pb-8">14</div>
+              <div className="text-xl sm:text-2xl text-white/60">
                 Dni od rozpoczęcia
                 <br />
                 projektu do publikacji.
@@ -36,10 +50,10 @@ const Grid = () => {
             </div>
           </div>
 
-          <div className="flex flex-col text-white justify-center items-center p-24">
+          <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-8xl pb-8">150+</div>
-              <div className="text-2xl text-white/60">
+              <div className="text-7xl sm:text-8xl sm:pb-8">150+</div>
+              <div className="text-xl sm:text-2xl text-white/60">
                 Zadowolonych klientów z <br />
                 różnych branż.
               </div>

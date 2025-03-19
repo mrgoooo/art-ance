@@ -44,6 +44,9 @@ const Carousel = () => {
 
   const intervalRef = useRef(null);
 
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
   const prevSlide = () => {
     startAutoSlide();
     setCurrentIndex((prevIndex) =>
@@ -76,110 +79,141 @@ const Carousel = () => {
     }, 5000); // Zmienia co 3 sekundy (3000 ms)
   };
 
-  return (
-    <div className="w-full lg:h-screen  bg-black flex flex-col items-center justify-center  ">
-      <div className="w-3/4">
-        <Line text="PROCES" />
-      </div>
-      <div className=" w-3/4 h-full  overflow-hidden">
-        {/* Slajdy */}
-        <div
-          className="flex  w-full transition-transform duration-1000 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="w-full flex-shrink-0 p-4" // Added padding for spacing
-            >
-              <p className="text-white">{slide.step}</p>
-              <div className="flex items-center py-9">
-                {/* Text Content - Left Side */}
-                <div className="w-2/3 pr-8">
-                  {" "}
-                  {/* Added right padding for spacing */}
-                  <div className="flex items-center gap-4">
-                    <h2 className=" text-5xl md:text-7xl text-white font-bold">
-                      {slide.title}
-                    </h2>
-                    <svg
-                      width="97"
-                      height="97"
-                      viewBox="0 0 97 97"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-28 h-28"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M72.7503 24.25H24.2503V32.3334H58.9507L22.5757 68.7084L28.2915 74.4241L64.6669 38.0487V72.75H72.7503V24.25Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <p className=" pt-10 text-gray-600 text-2xl">
-                    {slide.description}
-                  </p>
-                  {/* Add additional buttons or elements if needed */}
-                </div>
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
 
-                {/* Image - Right Side */}
-                <div className="w-1/3 h-full">
-                  <img
-                    src={myImagee}
-                    alt={`Slide ${index}`}
-                    className="w-full h-full object-cover rounded-lg" // Added rounded corners
-                  />
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+    const deltaX = touchStartX.current - touchEndX.current;
+
+    if (deltaX > 50) {
+      nextSlide();
+    } else if (deltaX < -50) {
+      prevSlide();
+    }
+
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
+  return (
+    <div
+      className="w-full flex justify-center"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
+      <div className="w-[90%] lg:h-screen  bg-white rounded-2xl sm:bg-black flex flex-col items-center justify-center ">
+        <div className="hidden md:block w-[90%] sm:w-3/4 ">
+          <Line text="PROCES" />
+        </div>
+        <h2 className="text-black w-full pl-9 text-left text-7xl sm:hidden pb-10 pt-3">
+          How it <br /> works.
+        </h2>
+        <div className=" w-[90%] sm:w-3/4 h-full  overflow-hidden  rounded-2xl">
+          {/* Slajdy */}
+          <div
+            className="flex  w-full transition-transform duration-1000 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className="w-full flex-shrink-0 p-4" // Added padding for spacing
+              >
+                <p className="sm:text-white text-black">{slide.step}</p>
+                <div className="flex items-center ">
+                  {/* Text Content - Left Side */}
+                  <div className=" w-full md:w-2/3 pr-8">
+                    {" "}
+                    {/* Added right padding for spacing */}
+                    <div className="flex items-center ">
+                      <h2 className="text-black text-4xl   sm:text-5xl md:text-7xl sm:text-white font-bold">
+                        {slide.title}
+                      </h2>
+                      <svg
+                        width="97"
+                        height="97"
+                        viewBox="0 0 97 97"
+                        fill="black"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-16 h-16 sm:w-28 sm:h-28 fill-black sm:fill-white"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M72.7503 24.25H24.2503V32.3334H58.9507L22.5757 68.7084L28.2915 74.4241L64.6669 38.0487V72.75H72.7503V24.25Z"
+                        />
+                      </svg>
+                    </div>
+                    <p className=" pt-10 text-gray-600 text-lg sm:text-2xl">
+                      {slide.description}
+                    </p>
+                    {/* Add additional buttons or elements if needed */}
+                  </div>
+
+                  {/* Image - Right Side */}
+                  <div className="hidden md:block w-1/3 h-full">
+                    <img
+                      src={myImagee}
+                      alt={`Slide ${index}`}
+                      className="w-full h-full object-cover rounded-lg" // Added rounded corners
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex py-5 justify-between flex-row-reverse space-x-2">
-          <div className=" text-2xl">
-            {/* Przycisk "Poprzedni" */}
-            <button onClick={prevSlide} className=" text-white m-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                className="w-9 h-9 mr-2 fill-white hover:fill-gray-500 transition-colors duration-300"
-              >
-                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-              </svg>
-            </button>
-
-            {/* Przycisk "Następny" */}
-            <button onClick={nextSlide} className=" text-white m-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e8eaed"
-                className="w-9 h-9 mr-2 fill-white hover:fill-gray-500 transition-colors duration-300"
-              >
-                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
-              </svg>
-            </button>
+            ))}
           </div>
 
-          {/* Wskaźniki (dot indicators) */}
-          <div className=" space-x-2  items-center">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-6 h-[2px] transition-all duration-300 ${
-                  currentIndex === index
-                    ? "bg-white scale-120 w-8"
-                    : "bg-gray-400"
-                }`}
-              ></button>
-            ))}
+          <div className="flex justify-between flex-row-reverse space-x-2">
+            <div className=" text-2xl pb-4">
+              {/* Przycisk "Poprzedni" */}
+              <button onClick={prevSlide} className=" text-white m-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  className=" w-7 h-7 sm:w-9 sm:h-9 mr-2 fill-black sm:fill-white hover:fill-gray-500 transition-colors duration-300"
+                >
+                  <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                </svg>
+              </button>
+
+              {/* Przycisk "Następny" */}
+              <button onClick={nextSlide} className=" text-white m-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                  className=" w-7 h-7 sm:w-9 sm:h-9 mr-2 fill-black sm:fill-white hover:fill-gray-500 transition-colors duration-300 "
+                >
+                  <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Wskaźniki (dot indicators) */}
+            <div className=" space-x-2 pt-2 pl-9 items-center">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-6 h-[2px] transition-all duration-300 ${
+                    currentIndex === index
+                      ? "bg-black sm:bg-white scale-120 w-8"
+                      : "bg-gray-400"
+                  }`}
+                ></button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

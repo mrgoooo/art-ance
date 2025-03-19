@@ -3,9 +3,9 @@ import Image from "../assets/images/serwerowanie.png";
 function CardSerw() {
   return (
     <div className="w-1/2  relative bg-gradient-to-b from-[#2140b2] to-sky-100 rounded-[20px] mr-3">
-      <div className="flex justify-between s">
-        <div className="flex flex-col">
-          <h2 className="pl-8 pt-8 text-3xl">Serwerowanie</h2>
+      <div className="flex justify-between h-full">
+        <div className="w-1/2 flex flex-col">
+          <h2 className="pl-8 pt-8 text-4xl">Serwerowanie</h2>
           <p className="pl-8 text-lg">
             Usługi serwerowe, które gwarantują stabilność, bezpieczeństwo i
             szybkie działanie Twojej strony internetowej.
@@ -14,7 +14,7 @@ function CardSerw() {
             <ArrowButtonComp />
           </div>
         </div>
-        <img src={Image} className="w-1/2"></img>
+        <img src={Image} className="w-1/2 absolute bottom-0 right-0"></img>
       </div>
     </div>
   );

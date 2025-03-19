@@ -3,22 +3,23 @@ import Image from "../assets/images/UX.png";
 
 function CardUX() {
   return (
-    <div className=" w-[60%] bg-gradient-to-b from-[#c4c4c4] to-[#f3ae69] rounded-[20px] justify-start items-start inline-flex mr-3 mt-8 mb-8">
-      <div className="flex flex-col justify-between   w-3/4 ">
-        <div className="px-8 text-black text-4xl font-normal font-['Inter'] leading-relaxed">
+    <div className=" relative w-[60%] bg-gradient-to-b from-[#c4c4c4] to-[#f3ae69] rounded-[20px]  mr-3 mt-8 mb-8">
+      <div className="   h-full flex flex-col justify-between  w-3/4 ">
+        <div className=" pt-8 px-8 text-black text-4xl font-normal font-['Inter'] ">
           UX/UI Design
         </div>
-        <div className="px-8  text-black/70 text-base font-normal font-['Inter'] leading-tight">
-          Spersonalizowane projekty dopasowane do potrzeb klienta łączą estetykę
-          z funkcjonalnością, gwarantując intuicyjną nawigację i pozytywne
-          wrażenia na każdym kroku interakcji z Twoją stroną.
+        <div className="  pt-4 px-8 w-full text-black/70 text-base font-normal font-['Inter'] leading-tight z-10">
+          Spersonalizowane projekty dopasowane <br /> do potrzeb klienta łączą
+          estetykę z <br /> funkcjonalnością, gwarantując intuicyjną <br />{" "}
+          nawigację i pozytywne wrażenia na <br /> każdym kroku interakcji z
+          Twoją stroną.
         </div>
 
-        <div className="pb-8 pl-12 flex justify-start">
-          <ArrowButtonComp />
+        <div className="pb-8 pl-12 flex justify-start z-10 mt-auto">
+          <ArrowButtonComp textColor="black/70" arrowColor="#060117" />
         </div>
       </div>
-      <img src={Image} className="h-[500px]"></img>
+      <img src={Image} className="h-[500px] absolute bottom-0 right-4 "></img>
     </div>
   );
 }

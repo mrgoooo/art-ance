@@ -6,25 +6,31 @@ function Kontakt({ bgColor = "bg-black", textColor = "" }) {
     <footer
       className={`relative ${bgColor} text-white py-16  w-full flex justify-center ${textColor} `}
     >
-      <div className="w-3/4">
+      <div className="w-[90%] sm:w-3/4 ">
         {/* Gradient */}
         <div className="max-w-6xl mx-auto relative ">
           {/* Nagłówek */}
-          <div className="absolute -top-5 -left-5 min-w-[300px]  w-[40%] h-[40%] bg-orange-500 rounded-full blur-3xl opacity-30"></div>
-          <div className="mb-10  pb-20 flex justify-between flex-col md:flex-row ">
-            <div className="md:w-1/3 ">
-              <h2 className="text-6xl font-bold">Dołącz do nas już teraz.</h2>
+          <div className="hidden sm:block absolute -top-5 -left-5 min-w-[300px]  w-[40%] h-[40%] bg-orange-500 rounded-full blur-3xl opacity-30"></div>
+          <div className="mb-10 pb-20 flex justify-between flex-col md:flex-row ">
+            <div className="mx-8 md:w-1/3">
+              <h2 className="text-6xl sm:font-bold">
+                Dołącz do nas już teraz.
+              </h2>
             </div>
             <div>
-              <p className="text-4xl pt-4 md:pt-0">#newsletter</p>
+              <p className="sm:block hidden text-4xl pt-4 md:pt-0">
+                #newsletter
+              </p>
             </div>
           </div>
 
           {/* Formularz */}
-          <div className="flex flex-col justify-between md:flex-row pb-14 ">
-            <p className=" text-2xl text-gray-400 mb-6">Stay connected.</p>
-            <div className="w-[65%] flex flex-col  border-gray-700 pb-6">
-              <div className="flex-1 space-y-12">
+          <div className="flex flex-col items-center sm:justify-between md:flex-row pb-14  ">
+            <div className="hidden sm:block">
+              <p className="text-2xl text-gray-400 mb-6 ">Stay connected.</p>
+            </div>
+            <div className=" w-[90%] sm:w-[65%] flex flex-col justify-center items-center border-gray-700 pb-6">
+              <div className="space-y-12 w-full">
                 <input
                   type="text"
                   placeholder="First name"

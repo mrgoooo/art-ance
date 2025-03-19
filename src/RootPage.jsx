@@ -7,6 +7,7 @@ import OfferPage from "./Other/Oferta";
 import Kontakt from "./Components/Kontakt";
 import LastFooter from "./Components/LastFooter";
 import ONas from "./ONas/ONas";
+import REalizacje from "./Realizacje/Realizacje";
 
 export default function RootPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,6 +31,13 @@ export default function RootPage() {
         return (
           <div className=" w-full flex justify-center animate-fade-in-slow ">
             <ONas />
+          </div>
+        );
+
+      case "Realizacja":
+        return (
+          <div className=" w-full flex justify-center animate-fade-in-slow ">
+            <REalizacje />
           </div>
         );
 
