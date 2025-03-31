@@ -80,104 +80,105 @@ const Advantages = () => {
   return (
     <div className="flex  items-center flex-col min-h-screen">
       <div className="hidden md:block w-3/4">
-        <Line text="OFERTA" className="bg-slate-300" />
+        <Line text="OFERTA" className="" />
       </div>
-
-      <div className="hidden lg:flex w-3/4  ">
-        <div className="w-1/2 p-4 flex flex-col items-start space-y-4 text-white text-4xl  ">
-          <button
-            onClick={() => handleButtonClick(text[0], "WEB Development")}
-            className={`p-5 rounded  transition-transform duration-1000  ${
-              selectedButton === "WEB Development"
-                ? "text-white translate-x-20"
-                : "text-gray-500"
-            }`}
-          >
-            WEB Development
-          </button>
-          <button
-            onClick={() => handleButtonClick(text[1], "UI/UX Design")}
-            className={`p-5 rounded  transition-transform duration-1000 ${
-              selectedButton === "UI/UX Design"
-                ? "text-white translate-x-20"
-                : "text-gray-500"
-            }`}
-          >
-            UI/UX Design
-          </button>
-          <button
-            onClick={() => handleButtonClick(text[2], "SEO")}
-            className={`p-5 rounded transition-transform duration-1000 :hover ${
-              selectedButton === "SEO"
-                ? "text-white translate-x-20"
-                : "text-gray-500"
-            }`}
-          >
-            SEO
-          </button>
-          <button
-            onClick={() => handleButtonClick(text[3], "Serwerowanie")}
-            className={`p-5 rounded transition-transform duration-1000 ${
-              selectedButton === "Serwerowanie"
-                ? "text-white translate-x-20"
-                : "text-gray-500"
-            }`}
-          >
-            Serwerowanie
-          </button>
-          <button
-            onClick={() => handleButtonClick(text[4], "Web Managment")}
-            className={`p-5 rounded transition-transform duration-1000 ${
-              selectedButton === "Web Managment"
-                ? "text-white translate-x-20"
-                : "text-gray-500"
-            }`}
-          >
-            Web Managment
-          </button>
-        </div>
-
-        <div className="w-1/2">
-          <h2
-            key={selectedText.begin}
-            className="text-2xl text-white m-16 animate-fade-in left-0 top-0 pl-5"
-          >
-            {selectedText.begin}
-          </h2>
-          <h2
-            key={selectedText.text}
-            className="text-2xl text-white/60 m-16 animate-fade-in-slow left-0 top-0"
-          >
-            {selectedText.text}
-          </h2>
-        </div>
-      </div>
-      {/* Wersja dla telefonu */}
-
-      <div className=" flex flex-col lg:hidden w-[95%] items-center">
-        <div className="flex  mx-6 h-28">
-          <div className="w-1/2 justify-center text-white text-4xl font-normal font-['Inter'] leading-10">
-            Powered by
+      <div className="flex justify-center items-center  h-full">
+        <div className="hidden lg:flex w-3/4  ">
+          <div className="w-1/2 p-4 flex flex-col items-start space-y-4 text-white text-4xl  ">
+            <button
+              onClick={() => handleButtonClick(text[0], "WEB Development")}
+              className={`p-5 rounded  transition-transform duration-1000  ${
+                selectedButton === "WEB Development"
+                  ? "text-white translate-x-20"
+                  : "text-gray-500"
+              }`}
+            >
+              WEB Development
+            </button>
+            <button
+              onClick={() => handleButtonClick(text[1], "UI/UX Design")}
+              className={`p-5 rounded  transition-transform duration-1000 ${
+                selectedButton === "UI/UX Design"
+                  ? "text-white translate-x-20"
+                  : "text-gray-500"
+              }`}
+            >
+              UI/UX Design
+            </button>
+            <button
+              onClick={() => handleButtonClick(text[2], "SEO")}
+              className={`p-5 rounded transition-transform duration-1000 :hover ${
+                selectedButton === "SEO"
+                  ? "text-white translate-x-20"
+                  : "text-gray-500"
+              }`}
+            >
+              SEO
+            </button>
+            <button
+              onClick={() => handleButtonClick(text[3], "Serwerowanie")}
+              className={`p-5 rounded transition-transform duration-1000 ${
+                selectedButton === "Serwerowanie"
+                  ? "text-white translate-x-20"
+                  : "text-gray-500"
+              }`}
+            >
+              Serwerowanie
+            </button>
+            <button
+              onClick={() => handleButtonClick(text[4], "Web Managment")}
+              className={`p-5 rounded transition-transform duration-1000 ${
+                selectedButton === "Web Managment"
+                  ? "text-white translate-x-20"
+                  : "text-gray-500"
+              }`}
+            >
+              Web Managment
+            </button>
           </div>
-          <div className="w-1/2 flex flex-col justify-end items-begin ">
-            {" "}
-            <img className="" src={Image}></img>
+
+          <div className="w-1/2">
+            <h2
+              key={selectedText.begin}
+              className="text-2xl text-white m-16 animate-fade-in left-0 top-0 pl-5"
+            >
+              {selectedText.begin}
+            </h2>
+            <h2
+              key={selectedText.text}
+              className="text-2xl text-white/60 m-16 animate-fade-in-slow left-0 top-0"
+            >
+              {selectedText.text}
+            </h2>
           </div>
         </div>
+        {/* Wersja dla telefonu */}
 
-        {/* Komponenty */}
-        <div className="bg-black text-white min-h-screen p-6 flex flex-col gap-6 w-[90%] ">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col gap-2 pb-8">
-              <div className="flex">
-                <span className="text-gray-400 text-lg pr-1">
-                  {service.number}/
-                </span>
-                <h2 className=" font-semibold text-3xl">{service.title}</h2>
-              </div>
-              <p className="text-gray-300 text-lg">{service.description}</p>
+        <div className=" flex flex-col lg:hidden w-[95%] items-center">
+          <div className="flex justify-center mx-6 h-28">
+            <div className="w-1/2 justify-center text-white text-4xl font-normal font-['Inter'] leading-10">
+              Powered by
             </div>
-          ))}
+            <div className="w-1/2 sm:w-1/3 flex flex-col justify-end items-begin ">
+              {" "}
+              <img className="" src={Image}></img>
+            </div>
+          </div>
+
+          {/* Komponenty */}
+          <div className="bg-black text-white min-h-screen p-6 flex flex-col gap-6 w-[90%] ">
+            {services.map((service, index) => (
+              <div key={index} className="flex flex-col gap-2 pb-8">
+                <div className="flex">
+                  <span className="text-gray-400 text-lg pr-1">
+                    {service.number}/
+                  </span>
+                  <h2 className=" font-semibold text-3xl">{service.title}</h2>
+                </div>
+                <p className="text-gray-300 text-lg">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

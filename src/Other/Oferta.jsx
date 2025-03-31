@@ -6,13 +6,13 @@ import CardSerw from "./CardSerw";
 import CardWebMan from "./CardWebMan";
 import Pytania from "./Pytania";
 
-const Oferta = () => {
+const Oferta = ({ onNavigate }) => {
   return (
     <div className="bg-white text-black w-[90%] animate-fade-in flex  flex-col rounded-2xl items-center mb-8">
       <Hero />
       <CardWebDev />
       <div className="flex justify-between h-[650px]  w-[95%] ">
-        <CardUX />
+        <CardUX onNavigate={onNavigate} />
         <SEO />
       </div>
       <div className=" w-[95%] h-[400px] flex justify-between ">

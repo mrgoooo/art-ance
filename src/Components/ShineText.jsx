@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "../assets/images/cuttedlogo.png";
 import ImageBlack from "../assets/images/cuttedblacklogo.png";
-import RevealOnScroll from "./RevealAnimation";
+import RevealOnScroll from "../animations/RevealAnimation";
 
 const ShineText = () => {
   return (
@@ -22,7 +22,7 @@ const ShineText = () => {
           <h2 className="text-black  text-[84px] font-semibold pl-2 pb-8 leading-[70px] pt-8  ">
             WE <br /> MAKE <br />
             YOU
-            <br /> SHINE <br />
+            <br /> <RevealOnScroll>SHINE</RevealOnScroll>
             ONLINE.
           </h2>
         </div>

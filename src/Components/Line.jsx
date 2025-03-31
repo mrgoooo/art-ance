@@ -1,6 +1,6 @@
 const Line = ({ text = "ROTATED" }) => {
   return (
-    <div className="container mx-auto p-4 ">
+    <div className="container mx-aut">
       <div className="w-full flex items-stretch py-4">
         {/* Kontener z tekstem */}
         <div className="flex items-center text-white  pl-4">

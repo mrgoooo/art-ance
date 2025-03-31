@@ -1,4 +1,4 @@
-import Image from "../assets/images/WebDev.png";
+import Image from "../assets/images/WebDev.jpeg";
 function WDHero() {
   return (
     <div className="flex flex-col">

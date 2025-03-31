@@ -7,12 +7,12 @@ function REHero() {
         </div>
       </div>
       <div className="flex justify-start">
-        <div className="justify-center text-[#060017] text-[236px] font-normal font-['Inter'] leading-[210.80px] ">
+        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal font-['Inter'] leading-[100px]  md:leading-[210.80px] ">
           Artance
         </div>
       </div>
       <div className="flex justify-end">
-        <div className="justify-center text-[#060017] text-[236px] font-normal font-['Inter'] leading-[210.80px] ">
+        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal font-['Inter'] leading-[100px] md:leading-[210.80px] ">
           Studio
         </div>
       </div>
@@ -41,7 +41,7 @@ function REHero() {
             />
           </svg>
         </div>
-        <div className="w-[514px] h-[62px] justify-center text-black/60 text-xl font-normal font-['Inter'] leading-loose pb-8">
+        <div className="w-[514px] h-[100px] md:h-[62px] justify-center text-black/60 text-base sm:text-xl font-normal font-['Inter'] leading-loose pb-8 ">
           Każdy projekt to dla nas unikalna historia, w której kreatywność
           spotyka się z technologią.
         </div>

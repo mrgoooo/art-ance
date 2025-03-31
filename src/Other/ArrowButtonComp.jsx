@@ -1,13 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 function ArrowButtonComp({
-  onClick,
+  to = "/", // Domyślna ścieżka, jeśli nie zostanie podana
   textColor = "text-white/60",
   arrowColor = "#E8E8E8",
   text = "Dowiedz się więcej",
 }) {
+  const navigate = useNavigate();
+
   return (
     <button
       className="w-[194.59px] h-[50px] flex justify-center items-center"
-      onClick={onClick} // Funkcja aktywacji przekazana jako onClick
+      onClick={() => navigate(to)} // Przekierowanie na podany adres
     >
       <div>
         <h2 className={`text-xl ${textColor}`}>{text}</h2>

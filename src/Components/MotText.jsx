@@ -4,7 +4,7 @@ const MotText = () => {
   return (
     <header
       id="separate-line"
-      className="relative w-full h-screen bg-black flex flex-col justify-center items-center text-5xl md:text-8xl"
+      className="relative w-full h-screen bg-black flex flex-col justify-center items-center text-5xl md:text-[80px]"
     >
       {/* Gradient w tle */}
       <div className="absolute hidden  inset-0 lg:flex justify-center items-center z-0">

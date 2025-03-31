@@ -20,7 +20,7 @@ const WhyComponent = () => {
       </div>
       <div className="w-3/4 relative pt-20   flex flex-col lg:flex-row justify-center items-center  ">
         <div className="w-full h-2/3 flex items-center ">
-          <div className=" text-white  text-7xl md:text-8xl font-normal font-['Inter'] z-20 ">
+          <div className=" text-white  text-7xl md:text-8xl font-normal z-20 ">
             Dlaczego <br />
             Warto <br />z <br />
             Nami <br />
@@ -29,7 +29,7 @@ const WhyComponent = () => {
         </div>
         <div className="w-full h-full flex items-center justify-center z-20 ">
           <p
-            className="text-slate-200 text-2xl md:text-3xl lg:text-4xl text-justify lg:text-right lg"
+            className="text-slate-200 text-2xl md:text-3xl lg:text-4xl text-justify lg:text-right lg "
             // Możesz dynamicznie zmieniać tę wartość
           >
             Każdy projekt traktujemy indywidualnie, dbając o precyzję i
