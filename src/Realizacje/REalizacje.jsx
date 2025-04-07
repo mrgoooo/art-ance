@@ -5,8 +5,12 @@ import Navbar from "../Components/Navbar";
 import REKasprzak from "./REKasprzak";
 import REPytania from "./REPytania";
 import REIZA from "./REIZA";
+import { useEffect } from "react";
 
 function REalizacje() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full bg-black text-white flex flex-col">
       {/* Navbar */}

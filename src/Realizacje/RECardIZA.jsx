@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "../assets/images/IzaLogo.png";
 
 const projects = [
   {
@@ -99,7 +100,7 @@ const RECard = () => {
               >
                 <div className="flex justify-center">
                   <h2 className="text-3xl sm:text-4xl font-semibold mt-2 ">
-                    {projects[currentIndex].title}
+                    <img src={Image}></img>
                   </h2>
                 </div>
               </motion.div>

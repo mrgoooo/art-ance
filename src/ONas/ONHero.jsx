@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logodużeczarne.png";
 import ArrowButtonComp from "../Oferta/ArrowButtonComp";
+import { Link } from "react-router-dom";
 
 function ONHero() {
   return (
@@ -10,7 +11,10 @@ function ONHero() {
         <p className="text-xs pb-4 sm:pb-16 sm:text-2xl text-black/60 text-center">
           Tworzymy nowoczesne i funkcjonalne rozwiązania webowe.
         </p>
-        <button className="rounded-full border border-black/10 flex items-center mb-8">
+        <Link
+          to="/kontakt"
+          className="rounded-full border border-black/10 flex items-center mb-8"
+        >
           <div className="text-[10px] sm:text-base py-3 pl-3 pr-2 text-center text-black  font-normal ">
             Napisz do nas
           </div>
@@ -30,7 +34,7 @@ function ONHero() {
               />
             </svg>
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );

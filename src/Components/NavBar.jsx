@@ -28,7 +28,7 @@ export default function Navbar() {
             {[
               { name: "Home", path: "/" },
               { name: "Oferta", path: "/oferta" },
-              { name: "Realizacja", path: "/realizacja" },
+              { name: "Realizacje", path: "/realizacje" },
               { name: "O Nas", path: "/o-nas" },
               { name: "Kontakt", path: "/kontakt" },
             ].map((section) => (
@@ -68,11 +68,11 @@ export default function Navbar() {
         </div>
         <nav className="p-4 space-y-4">
           {[
-            { name: "NUMBERS BY ARTANCE", path: "/numbers" },
-            { name: "OFERTA", path: "/oferta" },
-            { name: "PROCES", path: "/proces" },
-            { name: "OPINIE", path: "/opinie" },
-            { name: "DOŁĄCZ DO NAS", path: "/dolacz" },
+            { name: "Home", path: "/" },
+            { name: "Oferta", path: "/oferta" },
+            { name: "Realizacje", path: "/realizacje" },
+            { name: "ONas ", path: "/o-nas" },
+            { name: "Kontakt", path: "/kontakt" },
           ].map((item, index) => (
             <button
               key={index}

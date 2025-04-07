@@ -20,52 +20,58 @@ function ONNumbers() {
         {/* Prawa kolumna z danymi */}
         <div className="lg:w-1/2 grid grid-cols-1 gap-10 md:w-1/2  ">
           {/* Box 1 */}
-          <div className=" flex justify-start lg:justify-end">
-            <div className="  w-[70%] lg:pr-16">
-              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
-                +50%
+          <div className=" flex  justify-end">
+            <div className=" flex justify-start w-full  md:w-[80%] lg:w-[60%]  ">
+              <div className="">
+                <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                  +50%
+                </div>
+                <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                  wzrostu sprzedaży
+                </div>
+                <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                  dzięki automatyzacji procesów
+                  <br />
+                  zakupowych w e-commerce.
+                </p>
               </div>
-              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
-                wzrostu sprzedaży
-              </div>
-              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
-                dzięki automatyzacji procesów
-                <br />
-                zakupowych w e-commerce.
-              </p>
             </div>
           </div>
 
           {/* Box 2 */}
-          <div className=" flex justify-start lg:justify-end">
-            <div className=" w-[70%] lg:pr-16">
-              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
-                -30%
+          <div className=" flex  justify-end">
+            <div className=" flex justify-start w-full  md:w-[80%] lg:w-[60%]  ">
+              <div className="">
+                <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                  -30%
+                </div>
+                <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                  kosztów operacyjnych
+                </div>
+                <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                  po wdrożeniu naszych rozwiązań
+                  <br />w branży edukacyjnej.
+                </p>
               </div>
-              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
-                kosztów operacyjnych
-              </div>
-              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
-                po wdrożeniu naszych rozwiązań
-                <br />w branży edukacyjnej.
-              </p>
             </div>
           </div>
 
           {/* Box 3 */}
-          <div className=" flex  justify-start lg:justify-end">
-            <div className=" w-[70%] lg:pr-16">
-              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
-                +60%
+          <div className=" flex  justify-end">
+            <div className=" flex justify-start w-full  md:w-[80%] lg:w-[60%]  ">
+              <div className="">
+                <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                  +60%
+                </div>
+                <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                  zaangażowania użytkowników
+                </div>
+                <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                  dzięki optymalizacji UX i
+                  <br />
+                  intuicyjnemu interfejsowi.
+                </p>
               </div>
-              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
-                zaangażowania użytkowników
-              </div>
-              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
-                dzięki optymalizacji UX i
-                <br />
-                intuicyjnemu interfejsowi.
-              </p>
             </div>
           </div>
         </div>

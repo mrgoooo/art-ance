@@ -41,9 +41,27 @@ function LastFooter() {
 
         {/* Social media */}
         <div className="w-full lg:w-1/3 flex  text-white text-xl justify-between  pt-8">
-          <FaFacebookF />
-          <FaInstagram />
-          <FaLinkedinIn />
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn />
+          </a>
         </div>
       </address>
 

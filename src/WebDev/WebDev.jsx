@@ -5,8 +5,11 @@ import WDwhy from "./WDWhy";
 import WDMot from "./WDMot";
 import WDEcommer from "./WDEcommer";
 import WDPytania from "./WDPytania";
-
+import { useEffect } from "react";
 function WebDev() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full bg-black text-white flex flex-col">
       {/* Navbar */}

@@ -6,7 +6,7 @@ const ONPlatform = () => {
     <div className="hidden lg:flex w-full flex-col items-center">
       <div className="w-[95%] flex flex-col h-[600px] items-center">
         {/* Logo */}
-        <div className="w-[200px] flex-1">
+        <div className="w-[130px] flex-1">
           <img src={Logo} alt="Platform Logo" className="w-full h-auto" />
         </div>
 
@@ -18,15 +18,15 @@ const ONPlatform = () => {
           </div>
 
           {/* Prawy blok tekstowy */}
-          <div className="flex flex-col md:w-4/5 w-full text-center md:text-left ">
-            <div className="text-[#060017] text-5xl md:text-8xl lg:text-[140px] font-normal  leading-tight">
+          <div className="flex flex-col md:w-4/5 w-full text-center xl:text-left ">
+            <div className="text-[#060017] text-5xl md:text-8xl xl:text-[130px] font-normal  leading-tight">
               Nieskończone
             </div>
             <div>
-              <span className="text-[#060017] text-5xl md:text-8xl lg:text-[140px] font-normal leading-tight">
+              <span className="text-[#060017] text-5xl md:text-8xl xl:text-[130px] font-normal leading-tight">
                 Możliwości
               </span>
-              <span className="text-[#060017] text-5xl md:text-8xl lg:text-[150px] font-normal  leading-tight">
+              <span className="text-[#060017] text-5xl md:text-8xl xl:text-[130px] font-normal  leading-tight">
                 .
               </span>
             </div>

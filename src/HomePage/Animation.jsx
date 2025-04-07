@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from "../assets/images/logoprzycięte.png";
 
 const GradientAnimation = () => {
   const [sizeMultiplier, setSizeMultiplier] = useState(1);
@@ -52,14 +53,8 @@ const GradientAnimation = () => {
       style={containerStyle}
       className="flex  items-center justify-center  overflow-hidden"
     >
-      <div className="text-4xl font-bold flex flex-row text-white animate-fade-in-slow">
-        <div className="text-9xl">ART</div>
-        <div className="text-4xl font-bold [writing-mode:vertical-lr] text-center h-[9rem]">
-          Ance
-        </div>
-        <div className="text-3xl flex items-end mb-5">
-          <p>.</p>
-        </div>
+      <div className=" h-[150px] flex flex-row text-white animate-fade-in-slow">
+        <img src={Image}></img>
       </div>
     </a>
   );

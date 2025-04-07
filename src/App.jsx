@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/oferta/UX-UI" element={<UX />} />
         <Route path="/oferta/SEO" element={<SEO />} />
         <Route path="/oferta/serwerowanie" element={<SERW />} />
-        <Route path="/realizacja" element={<REalizacje />} />
+        <Route path="/realizacje" element={<REalizacje />} />
         <Route path="/o-nas" element={<ONas />} />
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route
