@@ -1,56 +1,71 @@
 import React from "react";
 import Logo from "../assets/images/logodużeczarne.png";
-import ArrowButtonComp from "../Other/ArrowButtonComp";
+import ArrowButtonComp from "../Oferta/ArrowButtonComp";
 
 function ONNumbers() {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div className="w-[95%] flex pt-10 ">
-        <div className="w-[65%] h-[800px] ">
-          <div className=" text-[#060017] text-[110px] font-normal font-['Inter'] leading-[111px]">
+    <div className="w-full flex flex-col items-center justify-center px-4 py-10 pb-10">
+      <div className="w-full max-w-7xl flex  justify-center   gap-10">
+        {/* Lewa kolumna z nagłówkiem */}
+        <div className="lg:w-1/2 ">
+          <h2 className="text-[#060017] text-4xl sm:text-6xl md:text-7xl lg:text-[90px] xl:text-[110px] font-normal leading-tight lg:leading-[100px]">
             Liczby mówią same za
             <br />
             siebie – <br />z nami
             <br />
             osiągniesz więcej!
-          </div>
+          </h2>
         </div>
-        <div className="grid grid-cols-1 grid-rows-3  ">
-          <div className="">
-            <div className=" text-[#060017] text-9xl font-normal font-['Inter'] ">
-              +50%
-            </div>
-            <div className=" text-[#060017] text-lg font-normal font-['Inter']">
-              wzrostu sprzedaży
-            </div>
-            <div className="text-[#060017]/60 text-[15px] font-normal font-['Inter'] leading-[15px]">
-              dzięki automatyzacji procesów
-              <br />
-              zakupowych w e-commerce.
-            </div>
-          </div>
-          <div>
-            <div className=" text-[#060017] text-9xl font-normal font-['Inter'] ">
-              -30%
-            </div>
-            <div className=" text-[#060017] text-lg font-normal font-['Inter']">
-              kosztów operacyjnych
-            </div>
-            <div className="text-[#060017]/60 text-[15px] font-normal font-['Inter'] leading-[15px]">
-              po wdrożeniu naszych rozwiązań
-              <br />w branży edukacyjnej.
+
+        {/* Prawa kolumna z danymi */}
+        <div className="lg:w-1/2 grid grid-cols-1 gap-10 md:w-1/2  ">
+          {/* Box 1 */}
+          <div className=" flex justify-start lg:justify-end">
+            <div className="  w-[70%] lg:pr-16">
+              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                +50%
+              </div>
+              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                wzrostu sprzedaży
+              </div>
+              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                dzięki automatyzacji procesów
+                <br />
+                zakupowych w e-commerce.
+              </p>
             </div>
           </div>
-          <div>
-            <div className=" text-[#060017] text-9xl font-normal font-['Inter'] ">
-              +60%
+
+          {/* Box 2 */}
+          <div className=" flex justify-start lg:justify-end">
+            <div className=" w-[70%] lg:pr-16">
+              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                -30%
+              </div>
+              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                kosztów operacyjnych
+              </div>
+              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                po wdrożeniu naszych rozwiązań
+                <br />w branży edukacyjnej.
+              </p>
             </div>
-            <div className=" text-[#060017] text-lg font-normal font-['Inter']">
-              zaangażowania użytkowników
-            </div>
-            <div className="text-[#060017]/60 text-[15px] font-normal font-['Inter'] leading-[15px]">
-              dzięki optymalizacji UX i <br />
-              intuicyjnemu interfejsowi.
+          </div>
+
+          {/* Box 3 */}
+          <div className=" flex  justify-start lg:justify-end">
+            <div className=" w-[70%] lg:pr-16">
+              <div className="text-[#060017] text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-normal">
+                +60%
+              </div>
+              <div className="text-[#060017] text-[10px] sm:text-sm md:text-base lg:text-lg xl:text-xl font-medium mt-2">
+                zaangażowania użytkowników
+              </div>
+              <p className="hidden md:block text-[#060017]/60 text-[4px] sm:text-[8px] md:text-sm lg:text-base leading-snug mt-1">
+                dzięki optymalizacji UX i
+                <br />
+                intuicyjnemu interfejsowi.
+              </p>
             </div>
           </div>
         </div>
@@ -58,4 +73,5 @@ function ONNumbers() {
     </div>
   );
 }
+
 export default ONNumbers;

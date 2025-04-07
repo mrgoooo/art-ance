@@ -12,16 +12,20 @@ function UXHero() {
       <div className="w-ful flex flex-col-reverse lg:flex-row justify-center pl-4 sm:pl-0">
         <div className=" h-full w-full flex items-center">
           <div className="pt-10 w-full">
-            <div className="w-2/3  lg:w-[588px] justify-center text-[#060017] text-3xl lg:text-[52px] font-normal font-['Inter'] lg:leading-[66px]">
+            <div className="w-2/3 hidden md:block lg:w-[588px] justify-center text-[#060017] text-3xl lg:text-[52px] font-normal  lg:leading-[66px]">
               “Wyglad strony to 90% sukcesu. Twoja Strona=
               <br />
               Twoja Wizytowka”
             </div>
-            <div className="justify-center text-[#060017]/60 text-[22px] font-normal font-['Inter'] leading-loose">
+            <div className=" md:hidden w-full  lg:w-[588px] justify-center text-[#060017] text-xl lg:text-[52px] font-normal  lg:leading-[66px]">
+              “Wyglad strony to 90% sukcesu. <br /> Twoja Strona = Twoja
+              Wizytowka”
+            </div>
+            <div className="hidden md:block justify-center text-[#060017]/60 text-[22px] font-normal leading-loose">
               -Zespol kreatywny ARTANCE.
             </div>
-            <div className="justify-start items-start">
-              <button className=" mt-7 px-5 py-4  text-center justify-center rounded-full border-black/20 border-2 text-[#060017] text-base font-normal font-['Inter']">
+            <div className="flex justify-center md:justify-start items-start">
+              <button className=" mt-7 px-3 py-2 md:px-5 md:py-4  text-center justify-center rounded-full border-black/20 border-2 text-[#060017] text-xs md:text-base font-normal ">
                 Zobacz nasze Realizacje
               </button>
             </div>

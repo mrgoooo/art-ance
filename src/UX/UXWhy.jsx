@@ -48,29 +48,34 @@ function UXWhy() {
   return (
     <div className="flex flex-col w-[95%] h-full pb-8 rounded-2xl z-10">
       <section className="py-12 bg-white bg-opacity-25 px-6 md:px-12 rounded-2xl">
-        <h2 className="text-5xl  text-gray-900 mb-4">
+        <h2 className="text-lg sm:text-5xl  text-gray-900 mb-4">
           Dlaczego UX/UI Design jest ważny?
         </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative ">
           {/* Tekst */}
           <div className="">
-            <p className="text-gray-700 mb-6">
+            <p className="hidden md:block text-gray-700 mb-6">
               UX/UI design to intuicja, wygoda i pozytywne <br /> doświadczenia.
               Dobrze zaprojektowany interfejs <br /> przyciąga, ułatwia i buduje
               lojalność użytkowników.
             </p>
-            <div className="space-y-4 pt-24">
+            <p className="md:hidden text-xs text-gray-700 mb-6 leading-6">
+              UX/UI design to intuicja, wygoda i pozytywne doświadczenia. Dobrze
+              zaprojektowany interfejs przyciąga, ułatwia i buduje lojalność
+              użytkowników.
+            </p>
+            <div className="space-y-4 pt-8 lg:pt-24">
               <div className="flex items-start space-x-3">
                 <div>
                   <div className="flex">
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-[32px]  text-gray-900">
+                    <h3 className="text:lg md:text-[32px]  text-gray-900">
                       Większa konwersja
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[13px]">
+                  <p className="text-gray-700 text-[10px] md:text-[13px]">
                     Lepsze doświadczenie użytkownika oznacza większą sprzedaż.
                   </p>
                 </div>
@@ -81,11 +86,11 @@ function UXWhy() {
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-[32px]  text-gray-900">
-                      Większa konwersja
+                    <h3 className="text:lg md:text-[32px]  text-gray-900">
+                      Wzrost lojalność klientów
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[13px]">
+                  <p className="text-gray-700 text-[10px] md:text-[13px]">
                     Intuicyjna nawigacja sprawia, że użytkownicy chętniej
                     wracają.
                   </p>
@@ -97,11 +102,11 @@ function UXWhy() {
                     <div className="pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-[32px]  text-gray-900">
-                      Większa konwersja
+                    <h3 className="text:lg md:text-[32px]  text-gray-900">
+                      Przewaga konkurencyjna
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[13px]">
+                  <p className="text-gray-700 text-[10px] md:text-[13px]">
                     Nowoczesny design buduje profesjonalny wizerunek firmy.
                   </p>
                 </div>
@@ -116,23 +121,27 @@ function UXWhy() {
           </div>
         </div>
       </section>
-      <section className="mt-10 rounded-2xl py-12 ">
+      <section className="mt-10 rounded-2xl md:py-12 ">
         <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* UX Design */}
-          <div className="  bg-[#f5e3d8] p-6 rounded-2xl shadow-md">
-            <h2 className=" text-[26px]   mb-2 ">
-              <span>Projektowanie UX </span>
+          <div className="  bg-[#f5e3d8] p-6 rounded-2xl shadow-md ">
+            <h2 className="text-lg md:text-[26px] mb-6 ">
+              <span>Projektowanie UX</span>
               <span className="text-gray-500">(User Experience)</span>
             </h2>
-            <p className="rounded mb-4 text-[#060017]/60 leading-tight">
+            <p className="hidden md:block rounded mb-4  text-[#060017]/60 leading-tight">
               To sposób, w jaki użytkownik czuje się <br /> podczas korzystania
               z produktu – czy jest <br /> prosty, wygodny i przyjemny.
             </p>
-            <ul className="list-none space-y-4  text-[#060017]/75 text-lg pt-28">
+            <p className="md:hidden rounded mb-4 text-sm text-[#060017]/60 leading-tight">
+              To sposób, w jaki użytkownik czuje się <br /> podczas korzystania
+              z produktu – czy jest <br /> prosty, wygodny i przyjemny.
+            </p>
+            <ul className="list-none space-y-4  text-[#060017]/75 text-xs md:text-lg pt-8 md:pt-28">
               <li className="flex">
                 <OkIcon /> Badania użytkowników i analiza ich potrzeb.
               </li>
-              <li className="flex">
+              <li className="hidden md:flex">
                 <OkIcon />
                 Tworzenie person i scenariuszy użytkowników.
               </li>
@@ -148,19 +157,23 @@ function UXWhy() {
 
           {/* UI Design */}
           <div className=" bg-[#f5e3d8] p-6 rounded-2xl shadow-md">
-            <h2 className="text-[26px]  text-gray-900 mb-2 ">
+            <h2 className="text-lg md:text-[26px]  text-gray-900 mb-6 ">
               Projektowanie <span className="text-gray-700">UI</span>{" "}
               <span className="text-gray-500">(User Interface)</span>
             </h2>
-            <p className=" mb-4 text-[#060017]/60 leading-tight">
+            <p className="hidden md:block mb-4 text-[#060017]/60 leading-tight">
               To wygląd i układ produktu – kolory, <br /> przyciski, czcionki i
               wszystko, co widzisz <br /> na ekranie.
             </p>
-            <ul className="list-none space-y-4 text-[#060017]/75 text-lg pt-28 ">
+            <p className="md:hidden text-sm mb-4 text-[#060017]/60 leading-tight">
+              To wygląd i układ produktu – kolory, przyciski, <br /> czcionki i
+              wszystko, co widzisz na ekranie.
+            </p>
+            <ul className="list-none space-y-4 text-[#060017]/75 text-xs md:text-lg pt-8 md:pt-28 ">
               <li className="flex">
                 <OkIcon /> Tworzenie nowoczesnych i estetycznych interfejsów.
               </li>
-              <li className="flex">
+              <li className="hidden md:flex">
                 <OkIcon />
                 Projektowanie zgodne z zasadami usability i accessibility.
               </li>

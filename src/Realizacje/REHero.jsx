@@ -2,17 +2,17 @@ function REHero() {
   return (
     <div className="flex flex-col w-[90%] h-full pb-8">
       <div className="flex justify-start">
-        <div className="justify-center text-[#060017] text-[44px] font-normal font-['Inter'] leading-10 pt-8">
+        <div className="justify-center text-[#060017] text-2xl md:text-[44px] font-normal leading-10 pt-8">
           Powered & Designed by
         </div>
       </div>
       <div className="flex justify-start">
-        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal font-['Inter'] leading-[100px]  md:leading-[210.80px] ">
+        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal  leading-[100px]  md:leading-[210.80px] ">
           Artance
         </div>
       </div>
       <div className="flex justify-end">
-        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal font-['Inter'] leading-[100px] md:leading-[210.80px] ">
+        <div className="justify-center text-[#060017] text-8xl md:text-[150px] lg:text-[230px] font-normal  leading-[100px] md:leading-[210.80px] ">
           Studio
         </div>
       </div>
@@ -41,7 +41,7 @@ function REHero() {
             />
           </svg>
         </div>
-        <div className="w-[514px] h-[100px] md:h-[62px] justify-center text-black/60 text-base sm:text-xl font-normal font-['Inter'] leading-loose pb-8 ">
+        <div className="w-[514px] h-[100px] md:h-[62px] justify-center text-black/60 text-xs sm:text-xl font-normal leading-loose pb-8 pt-8 sm:pt-4 ">
           Każdy projekt to dla nas unikalna historia, w której kreatywność
           spotyka się z technologią.
         </div>

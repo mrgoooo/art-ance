@@ -83,7 +83,7 @@ const RECard = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.5 }}
-                className="text-lg text-white px-4"
+                className="text-sm sm:text-lg text-white/90 px-4"
               >
                 {projects[currentIndex].content}
               </motion.p>
@@ -95,20 +95,22 @@ const RECard = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.9 }}
-                className="flex h-full items-center justify-center"
+                className="flex w-full h-full   items-center   justify-center"
               >
-                <div className="text-5xl inline-block rounded-lg">
-                  {projects[currentIndex].logo}
+                <div className="flex justify-center">
+                  <div className="pl-3 sm:pl-0 text-3xl sm:text-5xl inline-block rounded-lg">
+                    {projects[currentIndex].logo}
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-semibold mt-2 ">
+                    {projects[currentIndex].title}
+                  </h2>
                 </div>
-                <h2 className="text-4xl font-semibold mt-2">
-                  {projects[currentIndex].title}
-                </h2>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
         <div className="flex flex-col ">
-          <h2 className="text-3xl"> Body & Tennis</h2>
+          <h2 className="text-3xl "> Body & Tennis</h2>
           <div className="flex  justify-between w-full">
             {/* Tagi */}
             <div className="flex gap-2 flex-wrap justify-start mt-4">

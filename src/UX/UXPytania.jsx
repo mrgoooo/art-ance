@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 function UXPytania({ onClick }) {
   return (
     <div className="flex flex-col h-[300px] justify-end pb-16">
       <h2 className="text-center text-6xl">Masz pytania?</h2>
-      <button
+      <Link
+        to="/kontakt"
         className="px-2 py-3 mt-10 flex justify-center items-center border-2 border-black rounded-full"
-        onClick={onClick} // Funkcja aktywacji przekazana jako onClick
+        // Funkcja aktywacji przekazana jako onClick
       >
         <div>
           <h2 className={`text-xl`}>Napisz do nas</h2>
@@ -25,7 +27,7 @@ function UXPytania({ onClick }) {
             />
           </svg>
         </div>
-      </button>
+      </Link>
     </div>
   );
 }

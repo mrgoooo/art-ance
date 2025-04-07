@@ -1,17 +1,17 @@
 import React from "react";
 import Logo from "../assets/images/logodużeczarne.png";
-import ArrowButtonComp from "../Other/ArrowButtonComp";
+import ArrowButtonComp from "../Oferta/ArrowButtonComp";
 
 function ONHero() {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-[95%] flex flex-col items-center">
         <img className="pt-24 pl-4" src={Logo}></img>
-        <p className="pb-16 text-2xl text-black/60">
+        <p className="text-xs pb-4 sm:pb-16 sm:text-2xl text-black/60 text-center">
           Tworzymy nowoczesne i funkcjonalne rozwiązania webowe.
         </p>
         <button className="rounded-full border border-black/10 flex items-center mb-8">
-          <div className=" py-3 pl-3 pr-2 text-center text-black text-base font-normal font-['Inter']">
+          <div className="text-[10px] sm:text-base py-3 pl-3 pr-2 text-center text-black  font-normal ">
             Napisz do nas
           </div>
           <div data-svg-wrapper className="pr-3">

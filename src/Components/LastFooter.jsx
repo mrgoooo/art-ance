@@ -1,4 +1,4 @@
-import NormalLine from "./NormalLine";
+import NormalLine from "../HomePage/NormalLine";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function LastFooter() {
@@ -7,12 +7,12 @@ function LastFooter() {
       <NormalLine></NormalLine>
 
       {/* Nawigacja i kontakt */}
-      <div className="flex flex-wrap justify-between mt-10 text-gray-400">
-        <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center">
+      <div className="flex flex-wrap justify-between mt-10 text-gray-400 ">
+        <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <h4 className="text-white font-semibold pb-4">Oferta</h4>
           <p>Produkty</p>
         </div>
-        <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center">
+        <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <h4 className="text-white font-semibold pb-4">Projekty</h4>
           <p>Realizacje</p>
         </div>
@@ -40,7 +40,7 @@ function LastFooter() {
         </div>
 
         {/* Social media */}
-        <div className="w-full lg:w-1/3 flex lg:gap-40 text-white text-xl justify-between lg:mx-8 pt-8">
+        <div className="w-full lg:w-1/3 flex  text-white text-xl justify-between  pt-8">
           <FaFacebookF />
           <FaInstagram />
           <FaLinkedinIn />

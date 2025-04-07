@@ -1,65 +1,92 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import Image from "../assets/images/cuttedlogo.png";
 
-const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Navbar() {
+  const navigate = useNavigate();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [selectedSection, setSelectedSection] = useState(
+    sessionStorage.getItem("selectedSection") || "Home"
+  );
 
-  // Funkcja do przełączania stanu menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+  useEffect(() => {
+    return () => {
+      console.log("Komponent odmontowany, wykonuję kod na odchodne");
+      sessionStorage.setItem(`scroll-${selectedSection}`, window.scrollY);
+      sessionStorage.setItem("selectedSection", selectedSection);
+    };
+  }, []);
   return (
-    <header className="">
-      <nav className=" bg-black text-stone-300 flex justify-between">
-        <a href="/">
-          <p className="py-3 pl-3">B</p>
-        </a>
-        <div classname="sm:hidden">
-          <button
-            onClick={toggleMenu}
-            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu"
-            aria-expanded={isMenuOpen ? "true" : "false"}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="block h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
+    <nav className="z-30">
+      <header className="w-full flex justify-between items-center p-4 bg-black">
+        <button onClick={() => navigate("/")} className="text-2xl font-bold">
+          <img src={Image} className="h-8 w-8" alt="Logo" />
+        </button>
         <div className="hidden sm:block mx-auto">
-          <ul class="flex flex-center space-x-3 p-3">
-            <li>
-              <a href="/">
-                <p>sigma</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <p>sigma</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <p>sigma</p>
-              </a>
-            </li>
+          <ul className="flex items-center space-x-12 p-3">
+            {[
+              { name: "Home", path: "/" },
+              { name: "Oferta", path: "/oferta" },
+              { name: "Realizacja", path: "/realizacja" },
+              { name: "O Nas", path: "/o-nas" },
+              { name: "Kontakt", path: "/kontakt" },
+            ].map((section) => (
+              <li key={section.name}>
+                <button
+                  className="text-white hover:text-neutral-500 transition duration-300"
+                  onClick={() => navigate(section.path)}
+                >
+                  {section.name}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
-      </nav>
-    </header>
+        <button
+          className="text-white focus:outline-none hover:text-neutral-500 transition duration-300"
+          onClick={() => setIsSidebarOpen(true)}
+          aria-label="Otwórz menu"
+        >
+          <Menu size={32} />
+        </button>
+      </header>
+
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-black duration-300 transition-transform transform ${
+          isSidebarOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-4">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            <X size={32} />
+          </button>
+        </div>
+        <nav className="p-4 space-y-4">
+          {[
+            { name: "NUMBERS BY ARTANCE", path: "/numbers" },
+            { name: "OFERTA", path: "/oferta" },
+            { name: "PROCES", path: "/proces" },
+            { name: "OPINIE", path: "/opinie" },
+            { name: "DOŁĄCZ DO NAS", path: "/dolacz" },
+          ].map((item, index) => (
+            <button
+              key={index}
+              className="block w-full text-left border-b border-gray-700 pb-2 text-white hover:text-neutral-500 transition duration-300"
+              onClick={() => navigate(item.path)}
+            >
+              {item.name}
+            </button>
+          ))}
+        </nav>
+        <button className="p-5" onClick={() => setIsSidebarOpen(false)}>
+          HIDE &gt;
+        </button>
+      </div>
+    </nav>
   );
-};
-export default NavBar;
+}

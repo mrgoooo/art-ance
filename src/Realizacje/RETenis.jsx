@@ -5,17 +5,17 @@ function RETenis() {
     <div className="flex flex-col w-[90%] h-full pb-8">
       <div className="flex flex-col lg:flex-row  w-full">
         <RECard />
-        <div className="flex w-full lg:w-1/2 flex-col justify-end h-[500px] lg:h-[600px]">
-          <section className="max-w-2xl mx-auto p-6">
+        <div className="flex w-full lg:w-1/2 flex-col justify-end h-[400px]  sm:h-[500px] lg:h-[600px]">
+          <section className="max-w-2xl mx-auto p-4 ">
             {/* Nagłówek */}
-            <h1 className="text-5xl font-bold leading-tight text-black">
+            <h1 className="text-[46px] sm:text-5xl xl:text-[74px]  leading-[60px]  text-black">
               Twoja marka, <br /> Twoje zasady.
             </h1>
             {/* Opis */}
             <p className="text-lg text-gray-700 mt-4">
               Najlepsi profesjonaliści wybierają nowoczesne strony.
             </p>
-            <p className="text-md text-gray-500 mt-2">
+            <p className="text-xs sm:text-base text-gray-500 mt-2">
               Trenerzy personalni, artyści i eksperci z różnych branż rezygnują
               z przestarzałych rozwiązań na rzecz stron, które budują ich markę
               osobistą i robią wrażenie na odbiorcach.
@@ -40,10 +40,10 @@ function RETenis() {
                   />
                 </g>
               </svg>
-              <p className="text-xl font-semibold text-black">
+              <p className="text-lg sm:text-xl  text-black">
                 72% większe zaagażowanie,
                 <br />
-                <span className="text-gray-500 text-sm">
+                <span className="text-[10px] text-gray-500 sm:text-sm">
                   więcej kliknięć, więcej klientów, większy wpływ.
                 </span>
               </p>

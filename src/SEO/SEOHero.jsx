@@ -1,0 +1,51 @@
+import Image from "../assets/images/google.png";
+import RevealOnScroll from "../animations/RevealAnimation";
+import { Link } from "react-router-dom";
+
+function SEOHero() {
+  return (
+    <div className="flex flex-col  w-[90%] max-h-[1100px] pb-8 z-10 bg-">
+      <div className="w-full flex   ">
+        <h2 className="w-1/2 md:w-auto text-white text-left text-5xl lg:text-8xl pt-10 pb-9">
+          SEO
+        </h2>
+
+        <div className=" md:hidden">
+          <img className="pt-8 h-auto" src={Image}></img>
+        </div>
+      </div>
+      <div className="w-ful flex flex-col-reverse lg:flex-row justify-center pl-4 sm:pl-0">
+        <div className=" h-full w-full flex items-center">
+          <div className="pt-10 w-full ">
+            <div className="w-2/3 hidden md:block lg:w-[588px] justify-center text-white text-3xl lg:text-[52px] font-normal  lg:leading-[66px]">
+              "Więcej ruchu, więcej klientów, lepsze wyniki".
+            </div>
+            <div className="text-white md:hidden w-full text-center lg:w-[588px] justify-center text-whitetext-xl lg:text-[52px] font-normal  lg:leading-[66px]">
+              "Więcej ruchu, więcej klientów, lepsze wyniki".
+            </div>
+            <div className="hidden md:block justify-center text-white/60 text-[22px] font-normal leading-loose">
+              -Zespol operacyjny ARTANCE.
+            </div>
+            <div className="flex justify-center md:justify-start items-start">
+              <Link
+                to="/realizacja"
+                className="mt-7 px-3 py-2 md:px-5 md:py-4 text-center justify-center rounded-full border-white/20 border-2 text-white/80 text-xs md:text-base font-normal "
+              >
+                Zobacz nasze Realizacje
+              </Link>
+            </div>
+          </div>
+        </div>
+        <RevealOnScroll>
+          <div className="hidden md:flex justify-center">
+            <img
+              className="w-[80%] sm:w-[80%] lg:w-auto h-auto"
+              src={Image}
+            ></img>
+          </div>
+        </RevealOnScroll>
+      </div>
+    </div>
+  );
+}
+export default SEOHero;

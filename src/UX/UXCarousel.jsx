@@ -102,7 +102,7 @@ const UXCarousel = () => {
 
   return (
     <div
-      className="w-full flex justify-center pt-20"
+      className="w-full flex justify-center "
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -153,7 +153,7 @@ const UXCarousel = () => {
 
                     {/* Image - Right Side */}
                     <div className="absolute right-0 top-0 hidden md:block w-1/3  ">
-                      <h2 className="text-right pr-8 text-4xl font-normal font-['Inter']">
+                      <h2 className="text-right pr-8 text-4xl font-normal ">
                         #process
                       </h2>
                     </div>

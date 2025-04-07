@@ -14,7 +14,7 @@ function ONOffer() {
     "Integracja API",
   ];
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="hidden lg:flex w-full flex-col items-center">
       <div className="w-[95%] flex  h-[600px] items-center">
         <div className="w-1/2 flex flex-col items-center">
           {itemssecondcol.map((item, index) => (
