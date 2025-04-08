@@ -17,7 +17,7 @@ function ArrowIcon() {
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M29.9982 10H9.99819V13.3333H24.3086L9.30859 28.3334L11.6656 30.6904L26.6649 15.6912V30H29.9982V10Z"
-          fill="white"
+          fill="black"
         />
       </g>
     </svg>
@@ -44,23 +44,23 @@ function OkIcon() {
   );
 }
 
-function SERWWhy() {
+function WManWhy() {
   return (
     <div className="flex flex-col w-[95%] h-full pb-8 rounded-2xl z-10">
       <section className=" relative py-12 bg-white   bg-opacity-25 px-6 md:px-12 rounded-2xl overflow-hidden">
-        <h2 className="text-lg text-white sm:text-5xl   mb-4">
-          Dlaczego serwerowanie w Artance?
+        <h2 className="text-lg text-black sm:text-5xl   mb-4">
+          Dlaczego warto zainwestować w profesjonalne zarządzanie stroną?
         </h2>
 
         {/* Tekst */}
         <div className="md:col-span-2 lg:col-span-1">
-          <p className="hidden md:block text-white/60 mb-6">
+          <p className="hidden md:block text-black/70 mb-6">
             Nasze usługi serwerowania to coś więcej niż zwykły <br /> hosting –
             zapewniamy ciągłe monitorowanie, <br /> stabilność i pełne wsparcie
             techniczne, abyś Ty mógł <br /> skupić się na rozwoju swojego
             biznesu.
           </p>
-          <p className="md:hidden text-xs text-white/60 mb-6 leading-6">
+          <p className="md:hidden text-xs text-black/70 mb-6 leading-6">
             Dobre SEO zwiększa widoczność w wyszukiwarkach, przyciąga
             odpowiednich użytkowników i pomaga budować długoterminowy ruch na
             stronie.
@@ -73,11 +73,11 @@ function SERWWhy() {
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
                       Bezpieczeństwo
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
+                  <p className=" text-[10px] md:text-[13px] text-black/70 pt-2">
                     Ochrona przed atakami, firewall, regularne aktualizacje
                     systemu.
                   </p>
@@ -89,11 +89,11 @@ function SERWWhy() {
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
                       Wydajność
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
+                  <p className=" text-[10px] md:text-[13px] text-black/70 pt-2">
                     Optymalizacja szybkości i stabilności, zasoby dopasowane do
                     potrzeb Twojej strony.
                   </p>
@@ -105,13 +105,12 @@ function SERWWhy() {
                     <div className="pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
-                      Niezawodność
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
+                      Aktualność
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
-                    Stałe monitorowanie dostępności i szybka reakcja na
-                    ewentualne problemy.
+                  <p className="text-[10px] md:text-[13px] text-black/70 pt-2">
+                    Stałe aktualizacje treści i funkcjonalności. 
                   </p>
                 </div>
               </div>
@@ -126,11 +125,11 @@ function SERWWhy() {
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
                       Oszczędność czasu
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
+                  <p className=" text-[10px] md:text-[13px] text-black/70 pt-2">
                     My zajmujemy się administrowaniem serwerem, a Ty możesz
                     skupić się na biznesie.
                   </p>
@@ -142,11 +141,11 @@ function SERWWhy() {
                     <div className=" pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
                       Wsparcie eksperckie
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
+                  <p className=" text-[10px] md:text-[13px] text-black/70 pt-2">
                     więcej odwiedzin bez kosztów reklam.
                   </p>
                 </div>
@@ -157,11 +156,11 @@ function SERWWhy() {
                     <div className="pt-1">
                       <ArrowIcon />
                     </div>
-                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-white">
+                    <h3 className="text-lg md:text-[32px] lg:text-[28px] xl:text-[32px]  text-black">
                       Elastyczność
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60 pt-2">
+                  <p className=" text-[10px] md:text-[13px] text-black/70 pt-2">
                     serwer pozwala na natychmiastowe aktualizacje i modyfikacje
                     strony.
                   </p>
@@ -174,4 +173,4 @@ function SERWWhy() {
     </div>
   );
 }
-export default SERWWhy;
+export default WManWhy;

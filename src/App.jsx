@@ -10,6 +10,7 @@ import WebDev from "./WebDev/WebDev";
 import UX from "./UX/UX";
 import SEO from "./SEO/SEO";
 import SERW from "./Serwerowanie/SERW";
+import WMan from "./WebManagment/WMan";
 import "./App.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/oferta/UX-UI" element={<UX />} />
         <Route path="/oferta/SEO" element={<SEO />} />
         <Route path="/oferta/serwerowanie" element={<SERW />} />
+        <Route path="/oferta/web-managment" element={<WMan />} />
         <Route path="/realizacje" element={<REalizacje />} />
         <Route path="/o-nas" element={<ONas />} />
         <Route path="/kontakt" element={<KontaktPage />} />

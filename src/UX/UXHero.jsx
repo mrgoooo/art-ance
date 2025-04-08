@@ -1,5 +1,6 @@
 import Image from "../assets/images/UXHero.png";
 import RevealOnScroll from "../animations/RevealAnimation";
+import { Link } from "react-router-dom";
 
 function UXHero() {
   return (
@@ -25,9 +26,12 @@ function UXHero() {
               -Zespol kreatywny ARTANCE.
             </div>
             <div className="flex justify-center md:justify-start items-start">
-              <button className=" mt-7 px-3 py-2 md:px-5 md:py-4  text-center justify-center rounded-full border-black/20 border-2 text-[#060017] text-xs md:text-base font-normal ">
+              <Link
+                to="/realizacje"
+                className=" mt-7 px-3 py-2 md:px-5 md:py-4  text-center justify-center rounded-full border-black/20 border-2 text-[#060017] text-xs md:text-base font-normal "
+              >
                 Zobacz nasze Realizacje
-              </button>
+              </Link>
             </div>
           </div>
         </div>

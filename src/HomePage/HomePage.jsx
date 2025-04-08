@@ -48,9 +48,7 @@ function HomePage() {
           <OpinionsCarousel />
         </section>
 
-        <section id="kontakt">
-          <Kontakt />
-        </section>
+        <section id="kontakt">{/*<Kontakt />*/}</section>
       </div>
     </div>
   );

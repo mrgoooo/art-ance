@@ -17,7 +17,11 @@ function CardWebMan() {
             prowadzenie bloga i optymalizację <br /> wydajności.
           </p>
           <div className="h-full flex flex-col  justify-end pb-8 pl-6 md:pl-12">
-            <ArrowButtonComp arrowColor="#060117" textColor="black/60" />
+            <ArrowButtonComp
+              arrowColor="#060117"
+              textColor="black/60"
+              to="/oferta/web-managment"
+            />
           </div>
         </div>
         <img

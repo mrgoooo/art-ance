@@ -1,6 +1,7 @@
 import WebDev from "../assets/images/WebDev.jpeg";
 import WebDevAnother from "../assets/images/WebDevAnother.png";
 import RevealOnScroll from "../animations/RevealAnimation";
+import { Link } from "react-router-dom";
 
 function WDHero() {
   return (
@@ -34,10 +35,13 @@ function WDHero() {
           <img src={WebDevAnother}></img>
         </div>
 
-        <div className="flex w-full lg:hidden">
-          <button className="text-white text-[16px]  border-white/60 border rounded-full px-3 mt-[245px] sm:mt-[240px] mb-16 ml-12">
+        <div className="flex w-full lg: z-20">
+          <Link
+            to="/realizacje"
+            className="text-white text-[16px]  border-white/60 border rounded-full px-3 mt-[245px] sm:mt-[240px] mb-16 ml-12"
+          >
             Nasze Realizacje
-          </button>
+          </Link>
         </div>
       </div>
     </div>

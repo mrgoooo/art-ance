@@ -24,7 +24,7 @@ function ONas() {
           <ONNumbers />
           <ONPlatform />
           <ONOffer />
-          <ONKontakt bgColor="text-white" />
+          {/*<ONKontakt bgColor="text-white" />*/}
 
           <Pytania />
         </div>
