@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import RootPage from "./Pages/RootPage";
@@ -14,6 +15,28 @@ import WMan from "./WebManagment/WMan";
 import "./App.css";
 
 const App = () => {
+  useEffect(() => {
+    const favicon = document.getElementById("favicon");
+
+    const setFavicon = (isDark) => {
+      if (favicon) {
+        favicon.href = isDark ? "/cuttedblacklogo.ico" : "/cuttedlogo.ico";
+      }
+    };
+
+    const isDarkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    setFavicon(isDarkMode);
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = (e) => setFavicon(e.matches);
+    mediaQuery.addEventListener("change", handler);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handler);
+    };
+  }, []);
   return (
     <Router basename="/art-ance">
       <Routes>

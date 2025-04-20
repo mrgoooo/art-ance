@@ -4,11 +4,11 @@ const Grid = () => {
     <section className="flex justify-center lg:h-screen w-full bg-black flex-col items-center">
       <div className="w-[90%] flex sm:flex-col sm:w-3/4 pt-8">
         <div className="w-28 pb-8 sm:hidden">
-          <div class="flex flex-col items-center justify-center">
-            <div class="[writing-mode:vertical-rl] origin-center rotate-180 h-[85%] text-left pl-4 ">
-              <span class="text-[50px] tracking-tighter">
+          <div className="flex flex-col items-center justify-center">
+            <div className="[writing-mode:vertical-rl] origin-center rotate-180 h-[85%] text-left pl-4 ">
+              <p className="text-[50px] tracking-tighter">
                 NUMBERS by ARTANCE.
-              </span>
+              </p>
             </div>
           </div>
         </div>
