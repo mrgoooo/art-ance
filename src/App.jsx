@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage/HomePage";
 import RootPage from "./Pages/RootPage";
-import Navbar from "./Components/Navbar";
 import REalizacje from "./Realizacje/REalizacje";
 import KontaktPage from "./Kontakt/KontaktPage";
 import Oferta from "./Oferta/Oferta";

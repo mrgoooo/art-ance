@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import myImagee from "../assets/images/helpp.jpg";
-
 const slides = [
   {
     step: "Step 1",
