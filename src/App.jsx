@@ -38,7 +38,7 @@ const App = () => {
     };
   }, []);
   return (
-    <Router basename="/art-ance">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<RootPage />} />
         <Route path="/oferta" element={<Oferta />} />
