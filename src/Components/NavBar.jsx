@@ -53,6 +53,7 @@ export default function Navbar() {
       </header>
 
       {/* Sidebar */}
+      {/* Sidebar */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-black duration-300 transition-transform transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
