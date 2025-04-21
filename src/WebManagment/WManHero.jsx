@@ -1,4 +1,4 @@
-import Image from "../assets/images/WmanComputer.png";
+import Image from "../assets/images/WManComputer.png";
 import { Link } from "react-router-dom";
 
 function WManHero() {
