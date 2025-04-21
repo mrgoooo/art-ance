@@ -1,37 +1,29 @@
 import React, { useEffect, useState } from "react";
-import Image from "../assets/images/logoprzycięte.png";
+import logo from "../assets/images/logoprzycięte.png";
 
 const GradientAnimation = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const checkMobile = () => setIsMobile(window.innerWidth < 600);
+    checkMobile(); // sprawdzenie przy starcie
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const isMobile = windowWidth < 600;
   const gradientSize = isMobile ? 130 : 600;
 
-  const containerStyle = {
-    height: `${window.innerHeight}px`, // lub `${window.innerHeight}px` jako fallback
-    background: `radial-gradient(
-      ${gradientSize}px 380px at center,
-      #b96154 0%,
-      black 100%
-    )`,
-    transition: "background 0.1s ease-out",
+  const backgroundStyle = {
+    background: `radial-gradient(${gradientSize}px 380px at center, #b96154 0%, black 100%)`,
   };
 
   return (
     <a
       href="/"
-      style={containerStyle}
-      className="flex items-center justify-center"
+      className="h-screen w-full flex items-center justify-center"
+      style={backgroundStyle}
     >
-      <div className="h-[150px] flex flex-row text-white animate-fade-in-slow">
-        <img src={Image} alt="Logo" loading="lazy" />
-      </div>
+      <img src={logo} alt="Logo" className="h-[150px]" loading="lazy" />
     </a>
   );
 };
