@@ -1,6 +1,3 @@
-import Image from "../assets/images/WmanComputer.png";
-import { Link } from "react-router-dom";
-
 function WManNapis() {
   return (
     <div className="flex flex-col  w-[90%] max-h-[1400px] pb-8 z-10 bg-">
