@@ -54,12 +54,13 @@ export default function Navbar() {
 
       {/* Sidebar */}
       {/* Sidebar */}
+      {/* bg-black/30 backdrop-blur-sm*/}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-black duration-300 transition-transform transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-end p-4">
+        <div className="pb bg-black flex justify-end p-4">
           <button
             className="text-white focus:outline-none"
             onClick={() => setIsSidebarOpen(false)}

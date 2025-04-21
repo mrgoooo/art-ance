@@ -61,6 +61,8 @@ const Grid = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="hidden sm:flex  w-[90%] sm:flex-col sm:w-3/4 pt-8">
         <NormalLine />
       </div>
     </section>

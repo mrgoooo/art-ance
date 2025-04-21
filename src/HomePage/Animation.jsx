@@ -1,29 +1,39 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/logoprzycięte.png";
+import Image from "../assets/images/logoprzycięte.png";
 
 const GradientAnimation = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 600);
-    checkMobile(); // sprawdzenie przy starcie
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setViewportHeight(window.innerHeight);
+    };
+    handleResize(); // aktualizacja przy starcie
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const gradientSize = isMobile ? 130 : 600;
+  const isMobile = windowWidth < 600;
+  const gradientWidth = isMobile ? 130 : windowWidth * 0.5;
+  const gradientHeight = isMobile ? 380 : 750 * 0.5;
 
   const backgroundStyle = {
-    background: `radial-gradient(${gradientSize}px 380px at center, #b96154 0%, black 100%)`,
+    height: `${viewportHeight}px`, // lepsze niż 100vh na Safari
+    background: `radial-gradient(${gradientWidth}px ${gradientHeight}px at center, #b96154 0%, black 100%)`,
+    transition: "background 0.1s ease-out",
   };
 
   return (
     <a
       href="/"
-      className="h-screen w-full flex items-center justify-center"
       style={backgroundStyle}
+      className="flex items-center justify-center"
     >
-      <img src={logo} alt="Logo" className="h-[150px]" loading="lazy" />
+      <div className="h-[150px] flex flex-row text-white animate-fade-in-slow">
+        <img src={Image} alt="Logo" loading="lazy" />
+      </div>
     </a>
   );
 };
