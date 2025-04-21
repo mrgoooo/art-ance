@@ -1,5 +1,4 @@
-import Image from "../assets/images/SEOGoogleLogo.png";
-import RevealOnScroll from "../animations/RevealAnimation";
+import Image from "../assets/images/SEOGoogleLOGO.png";
 
 function SEOGoogleLogo() {
   return (
