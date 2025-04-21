@@ -1,7 +1,7 @@
 import React from "react";
 import RevealOnScroll from "../animations/RevealAnimation";
 
-import Computer from "../assets/images/ComputerOnas.png";
+import Computer from "../assets/images/computerOnas.png";
 
 function ONComputer() {
   return (
