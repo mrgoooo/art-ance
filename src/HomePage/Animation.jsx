@@ -2,23 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "../assets/images/logoprzycięte.png";
 
 const GradientAnimation = () => {
-  const [sizeMultiplier, setSizeMultiplier] = useState(1);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    let animationFrame;
-    let time = 0;
-
-    const animate = () => {
-      time += 0.01;
-      const scale = Math.sin(time) * 0.1 + 1;
-      setSizeMultiplier(scale);
-      animationFrame = requestAnimationFrame(animate);
-    };
-
-    animate();
-    return () => cancelAnimationFrame(animationFrame);
-  }, []);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -26,35 +10,27 @@ const GradientAnimation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const containerStyle =
-    windowWidth < 600
-      ? {
-          height: "100vh",
-          transition: "background 0.1s ease-out",
-          background: `radial-gradient(
-      ${130 * sizeMultiplier}px ${380}px at center, 
-      #b96154 0%, 
+  const isMobile = windowWidth < 600;
+  const gradientSize = isMobile ? 130 : 600;
+
+  const containerStyle = {
+    height: `${window.innerHeight}px`, // lub `${window.innerHeight}px` jako fallback
+    background: `radial-gradient(
+      ${gradientSize}px 380px at center,
+      #b96154 0%,
       black 100%
     )`,
-        }
-      : {
-          height: "100vh",
-          transition: "background 0.1s ease-out",
-          background: `radial-gradient(
-      ${600 * sizeMultiplier}px ${380}px at center, 
-      #b96154 0%, 
-      black 100%
-    )`,
-        };
+    transition: "background 0.1s ease-out",
+  };
 
   return (
     <a
       href="/"
       style={containerStyle}
-      className="flex  items-center justify-center "
+      className="flex items-center justify-center"
     >
-      <div className=" h-[150px] flex flex-row text-white animate-fade-in-slow">
-        <img src={Image}></img>
+      <div className="h-[150px] flex flex-row text-white animate-fade-in-slow">
+        <img src={Image} alt="Logo" loading="lazy" />
       </div>
     </a>
   );
