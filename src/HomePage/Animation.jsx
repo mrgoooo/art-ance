@@ -51,7 +51,7 @@ const GradientAnimation = () => {
     <a
       href="/"
       style={containerStyle}
-      className="flex  items-center justify-center  overflow-hidden"
+      className="flex  items-center justify-center "
     >
       <div className=" h-[150px] flex flex-row text-white animate-fade-in-slow">
         <img src={Image}></img>

@@ -9,22 +9,30 @@ function LastFooter() {
       {/* Nawigacja i kontakt */}
       <div className="flex flex-wrap justify-between mt-10 text-gray-400 ">
         <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
-          <h4 className="text-white font-semibold pb-4">Oferta</h4>
-          <p>Produkty</p>
+          <div className="w-1/2 bg-slate-500">
+            <h4 className="text-white font-semibold pb-4">Oferta</h4>
+            <p>Produkty</p>
+          </div>
         </div>
         <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <h4 className="text-white font-semibold pb-4">Projekty</h4>
-          <p>Realizacje</p>
+          <div className="w-1/2">
+            <p>Realizacje</p>
+          </div>
+        </div>
+        <div className="w-1/2 bg-slate-300 sm:w-auto pb-4 flex flex-col items-center pt-8">
+          <div className="w-1/2 bg-slate-50">
+            <h4 className="text-white font-semibold pb-4">Firma</h4>
+            <p className="pb-2">O nas</p>
+            <p>Kontakt</p>
+          </div>
         </div>
         <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
-          <h4 className="text-white font-semibold pb-4">Firma</h4>
-          <p className="pb-2">O nas</p>
-          <p>Kontakt</p>
-        </div>
-        <div className="w-1/2 sm:w-auto pb-4 flex flex-col items-center pt-8">
-          <h4 className="text-white font-semibold pb-4">Portal</h4>
-          <p className="pb-2">ArtanceFriends</p>
-          <p>Login</p>
+          <div className="w-1/2">
+            <h4 className="text-white font-semibold pb-4">Portal</h4>
+            <p className="pb-2">ArtanceFriends</p>
+            <p>Login</p>
+          </div>
         </div>
       </div>
 

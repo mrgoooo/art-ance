@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        playfair: ["Playfair Display", "serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-out",

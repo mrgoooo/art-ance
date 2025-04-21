@@ -1,7 +1,8 @@
 import Line from "./Line";
+import NormalLine from "./NormalLine";
 const Grid = () => {
   return (
-    <section className="flex justify-center lg:h-screen w-full bg-black flex-col items-center">
+    <section className="flex justify-center lg:h-full w-full bg-black flex-col items-center">
       <div className="w-[90%] flex sm:flex-col sm:w-3/4 pt-8">
         <div className="w-28 pb-8 sm:hidden">
           <div className="flex flex-col items-center justify-center">
@@ -60,6 +61,7 @@ const Grid = () => {
             </div>
           </div>
         </div>
+        <NormalLine />
       </div>
     </section>
   );
