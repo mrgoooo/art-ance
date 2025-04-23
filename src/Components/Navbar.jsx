@@ -73,7 +73,7 @@ export default function Navbar() {
             { name: "Home", path: "/" },
             { name: "Oferta", path: "/oferta" },
             { name: "Realizacje", path: "/realizacje" },
-            { name: "ONas ", path: "/o-nas" },
+            { name: "O Nas ", path: "/o-nas" },
             { name: "Kontakt", path: "/kontakt" },
           ].map((item, index) => (
             <button

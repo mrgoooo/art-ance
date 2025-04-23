@@ -7,9 +7,7 @@ function ONComputer() {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-[95%] flex flex-col items-center">
-        <RevealOnScroll>
-          <img className=" pl-4" src={Computer}></img>
-        </RevealOnScroll>
+        <img className=" pl-4" src={Computer}></img>
       </div>
     </div>
   );
