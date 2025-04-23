@@ -6,7 +6,7 @@ function Pytania({ onClick }) {
 
       <Link
         to="/kontakt"
-        className="px-2 py-3 w-1/2 mt-10 flex justify-center items-center border-2 rounded-full"
+        className="px-2 py-3 w-[70%] lg:w-1/2 mt-10 flex justify-center items-center border-2 rounded-full"
         // Funkcja aktywacji przekazana jako onClick
       >
         <div>

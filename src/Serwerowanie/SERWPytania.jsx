@@ -5,7 +5,7 @@ function SERWPytania({ onClick }) {
       <h2 className="text-center text-4xl md:text-6xl">Masz pytania?</h2>
       <Link
         to="/kontakt"
-        className="px-2 w-1/2 py-3 mt-10 flex justify-center items-center border-2 border-black/40 rounded-full"
+        className="px-2 w-[70%] lg:w-1/2 py-3 mt-10 flex justify-center items-center border-2 border-black/40 rounded-full"
         // Funkcja aktywacji przekazana jako onClick
       >
         <div>

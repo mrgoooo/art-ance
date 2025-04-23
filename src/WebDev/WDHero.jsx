@@ -24,7 +24,7 @@ function WDHero() {
           </p>
           <Link
             to="/realizacje"
-            className="  ml-4 pl-4 mt-20   px-5 py-4 rounded-full border-white/20 border-2 text-white  text-base font-normal "
+            className="  ml-4 pl-4 mt-20 px-5 py-2 rounded-full border-white/20 border-2 text-white  text-base font-normal "
           >
             Zobacz nasze Realizacje
           </Link>

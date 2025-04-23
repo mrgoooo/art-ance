@@ -27,7 +27,7 @@ function SERWHero() {
             <div className="flex justify-center md:justify-start items-start">
               <Link
                 to="/realizacje"
-                className="mt-7 px-3 py-2 md:px-5 md:py-4 text-center justify-center rounded-full border-white/20 border-2 text-white/80 text-xs md:text-base font-normal"
+                className="mt-7 px-3 py-2 md:px-5 md:py-2 text-center justify-center rounded-full border-white/20 border-2 text-white/80 text-xs md:text-base font-normal"
               >
                 Zobacz nasze Realizacje
               </Link>

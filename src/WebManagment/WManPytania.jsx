@@ -7,7 +7,7 @@ function WDPytania({ onClick }) {
       </h2>
       <Link
         to="/kontakt"
-        className="px-2  w-1/2 py-3 mt-10 flex justify-center items-center border-2 rounded-full border-black/50"
+        className="px-2  w-[70%] lg:w-1/2 py-3 mt-10 flex justify-center items-center border-2 rounded-full border-black/50"
         // Funkcja aktywacji przekazana jako onClick
       >
         <div>
