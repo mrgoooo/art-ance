@@ -48,11 +48,11 @@ function OkIcon() {
 function WDWhy() {
   return (
     <div className="flex flex-col w-[95%] h-full pb-8 rounded-2xl z-10">
-      <section className="relative py-12 bg-white bg-opacity-10   md:bg-opacity-25 px-6 md:px-12 rounded-2xl ">
+      <section className="relative py-12 bg-white bg-opacity-10 md:bg-opacity-25 px-6 md:px-12 rounded-2xl overflow-hidden">
         <h2 className="text-lg sm:text-[25px] lg:text-[19px]  text-white mb-4">
           Nowoczesne strony, które robią różnicę
         </h2>
-        <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Tekst */}
           <div className="">
             <div className="text-xs justify-center text-white text-opacity-60 sm:text-base font-normal  leading-tight">
@@ -60,7 +60,7 @@ function WDWhy() {
               szybkie, <br /> intuicyjne i zoptymalizowane pod sukces.
             </div>
 
-            <div className="space-y-4 pt-14 lg:pt-24">
+            <div className="space-y-4 pt-14 lg:pt-24 ">
               <div className="flex items-start space-x-3">
                 <div>
                   <div className="flex">
@@ -113,7 +113,7 @@ function WDWhy() {
 
           <img
             src={Image}
-            className="hidden lg:block absolute right-0 bottom-0 rounded-2xl h-[460.80px]"
+            className="hidden lg:block absolute lg:left-[500px] xl:left-[550px] bottom-0 rounded-2xl lg:h-[400.80px] xl:h-[480.80px]"
           ></img>
         </div>
       </section>

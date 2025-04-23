@@ -2,10 +2,10 @@ import Image from "../assets/images/logoprzycięte.png";
 function WDMot() {
   return (
     <div className="flex flex-col w-full items-center ">
-      <div className="hidden md:block text-left text-white  md:text-[70px] lg:text-[105px] xl:text-[130px] font-normal  leading-[210.80px] px-4">
+      <div className=" pl-12 w-full hidden md:block text-left text-white  md:text-[70px] lg:text-[105px] xl:text-[130px] font-normal  leading-[120.80px] px-4 tracking-tighter ">
         Osiągnij swoje cele
       </div>
-      <div className="hidden md:block text-right text-white md:text-[70px] lg:text-[105px] xl:text-[130px] font-normal  leading-[210.80px] px-4">
+      <div className="pr-12 w-full hidden md:block text-right text-white md:text-[70px] lg:text-[105px] xl:text-[130px] font-normal  leading-[120.80px] px-4 tracking-tighter pb-10">
         razem z ARTance.
       </div>
       <div className="md:hidden flex flex-col lg:hidden w-[95%] items-center justify-center pb-8">

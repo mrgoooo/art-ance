@@ -58,12 +58,12 @@ function WDEcommer() {
   return (
     <div className="flex flex-col  w-[95%] rounded-2xl ">
       <div className=" hidden relative xl:flex justify-end bg-white rounded-2xl bg-opacity-10">
-        <div className="flex-col">
-          <div className="w-[786px] pl-4 pr-[55.30px] md:pt-10 pb-[150px] inline-flex flex-col justify-start items-start gap-[7px]">
+        <div className="flex-col w-[59%]  ">
+          <div className="w-full   pl-4  md:pt-10 pb-[150px] inline-flex flex-col justify-start items-start gap-[7px]">
             <div className="justify-center text-white text-[19px] font-normal leading-relaxed">
               Sklep E-commerce – Sprzedawaj skutecznie online
             </div>
-            <div className="w-[647px] justify-center text-white text-opacity-60 text-base font-normal leading-tight">
+            <div className="w-full justify-center text-white text-opacity-60 text-base font-normal leading-tight pr-4">
               E-commerce to klucz do nowoczesnej sprzedaży! Tworzymy wydajne,
               intuicyjne i w pełni zoptymalizowane sklepy internetowe, które
               pozwalają Ci sprzedawać szybciej, łatwiej i skuteczniej. Bez
