@@ -78,12 +78,12 @@ const Advantages = () => {
   };
 
   return (
-    <div className="flex  items-center flex-col min-h-screen">
-      <div className="hidden md:block w-3/4">
-        <Line text="OFERTA" className="" />
+    <div className="flex  items-center flex-col min-h-screen ">
+      <div className="hidden xl:block w-3/4">
+        <Line className="" text={["O", "FE", "RT", "A"]} />
       </div>
-      <div className="flex justify-center items-center  h-full">
-        <div className="hidden lg:flex w-3/4  ">
+      <div className="flex justify-center items-center  h-full ">
+        <div className="hidden xl:flex w-3/4  ">
           <div className="w-1/2 p-4 flex flex-col items-start space-y-4 text-white text-4xl  ">
             <button
               onClick={() => handleButtonClick(text[0], "WEB Development")}
@@ -154,8 +154,8 @@ const Advantages = () => {
         </div>
         {/* Wersja dla telefonu */}
 
-        <div className=" flex flex-col lg:hidden w-[95%] items-center">
-          <div className="flex justify-center mx-6 h-28">
+        <div className=" flex flex-col xl:hidden w-[95%] items-center">
+          <div className="lg:hidden flex justify-center mx-6 h-28">
             <div className="w-1/2 justify-center text-white text-4xl font-normal  leading-10">
               Powered by
             </div>

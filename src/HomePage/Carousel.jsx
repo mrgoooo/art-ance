@@ -110,7 +110,7 @@ const Carousel = () => {
     >
       <div className="w-[90%] sm:w-full lg:h-screen  bg-white rounded-2xl sm:bg-black flex flex-col items-center justify-center ">
         <div className="hidden md:block w-[90%] sm:w-3/4 ">
-          <Line text="PROCES" />
+          <Line text={["PR", "OC", "E", "S"]} />
         </div>
         <h2 className="text-black w-full pl-9 text-left text-7xl sm:hidden pb-10 pt-3">
           How it <br /> works.

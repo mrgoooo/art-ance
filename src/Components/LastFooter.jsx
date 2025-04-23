@@ -40,10 +40,10 @@ function LastFooter() {
         {/* Kontakt */}
         <div className="text-gray-400">
           <p>
-            Email: <span className="text-white">artance@artance.pl</span>
+            Email: <span className="text-white">info@artance.pl</span>
           </p>
           <p>
-            Phone: <span className="text-white">+48 000 000 000</span>
+            Phone: <span className="text-white">+48 514 668 635</span>
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 const NormalLine = () => {
   return (
-    <div className="container mx-auto  ">
+    <div className="container mx-auto px-4 ">
       <div className="w-full flex items-stretch py-4">
         {/* Kontener z tekstem */}
 

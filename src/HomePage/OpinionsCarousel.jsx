@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import Line from "./Line";
 const slides = [
   {
     description:
@@ -115,6 +115,9 @@ const OpinionsCarousel = () => {
     >
       <div className="h-[600px] w-[90%]  bg-black sm:w-3/4 lg:h-screen overflow-hidden flex flex-col justify-center ">
         {/* Slajdy */}
+        <div className="hidden md:block mb-28">
+          <Line text={["O", "PI", "NI", "E"]} />
+        </div>
         <h2 className="sm:hidden text-white text-7xl pl-8">Reviews.</h2>
         <div className="bg-white sm:bg-black rounded-2xl mt-4 pt-4">
           <div

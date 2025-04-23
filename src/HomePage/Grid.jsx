@@ -14,8 +14,8 @@ const Grid = () => {
           </div>
         </div>
 
-        <div className="hidden sm:block">
-          <Line text="DANE" />
+        <div className="hidden sm:block ">
+          <Line text={["D", "A", "N", "E"]} />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2  ">
           <div className="flex flex-col  text-white sm:justify-center sm:items-center sm:p-24">

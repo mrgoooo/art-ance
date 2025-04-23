@@ -5,11 +5,11 @@ import RevealOnScroll from "../animations/RevealAnimation";
 
 const ShineText = () => {
   return (
-    <div className="flex justify-center h-[460px] md:h-screen w-full">
+    <div className="flex justify-center h-[500px]  w-full">
       <RevealOnScroll>
-        <div className=" hidden md:flex  h-screen w-full items-center  justify-center ">
-          <img src={Image} className="h-1/5"></img>
-          <h2 className="text-[90px] text-center text-white pl-12 tracking-tighter">
+        <div className=" hidden md:flex md:flex-col xl:flex-row h-full w-full items-center justify-center pb-24 ">
+          <img src={Image} className="h-[130px] xl:mr-10"></img>
+          <h2 className="text-[90px] text-center text-white  tracking-tighter">
             We make You <span className="">shine</span> Online
           </h2>
         </div>
