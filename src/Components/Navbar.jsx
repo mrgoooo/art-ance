@@ -34,7 +34,7 @@ export default function Navbar() {
             ].map((section) => (
               <li key={section.name}>
                 <button
-                  className="text-white hover:text-neutral-500 transition duration-300"
+                  className="text-white text-lg hover:text-neutral-500 transition duration-300"
                   onClick={() => navigate(section.path)}
                 >
                   {section.name}
