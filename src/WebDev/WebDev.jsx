@@ -1,5 +1,5 @@
 import WDHero from "./WDHero";
-import Navbar from "../Components/NavBar";
+import Navbar from "../Components/Navbar";
 import LastFooter from "../Components/LastFooter";
 import WDwhy from "./WDWhy";
 import WDMot from "./WDMot";
