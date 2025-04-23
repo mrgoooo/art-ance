@@ -51,7 +51,7 @@ function UXWhy() {
         <h2 className="text-lg sm:text-5xl  text-gray-900 mb-4">
           Dlaczego UX/UI Design jest ważny?
         </h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative ">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative ">
           {/* Tekst */}
           <div className="">
             <p className="hidden md:block text-gray-700 mb-6">
@@ -116,9 +116,10 @@ function UXWhy() {
 
           {/* Link */}
 
-          <div className="hidden lg:flex absolute h-[500px] right-0 top-9 justify-center ">
-            <img src={Image}></img>
-          </div>
+          <img
+            src={Image}
+            className="hidden lg:flex absolute right-0 lg:top-[180px] xl:top-[50px] justify-center h-[300px] xl:h-[450px] "
+          ></img>
         </div>
       </section>
       <section className="mt-10 rounded-2xl md:py-12 ">

@@ -8,7 +8,7 @@ const CardWebDev = () => {
       <div className="w-[95%] flex justify-evenly">
         <div className="w-full h-full bg-gradient-to-b from-[#060017] to-[#534a6f] rounded-[20px]  grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col ">
-            <div className="  text-white  text-[30px] lg:text-[64px]  leading-relaxed p-8">
+            <div className="  text-white  text-[30px] lg:text-[64px]  leading-[60px] p-8">
               Web Development
             </div>
             <div className="hidden md:block px-8 text-[20px]  pb-10 lg:pb-0 lg:text-xl  text-white/60 leading-5 md:leading-tight">
@@ -30,8 +30,8 @@ const CardWebDev = () => {
               <ArrowButtonComp to="/oferta/webdev" />
             </div>
           </div>
-          <div className="lg:flex hidden  ">
-            <img src={Image} className=" h-[90%] "></img>
+          <div className="lg:flex hidden h-full items-end justify-end pr-8 pb-4">
+            <img src={Image} className="w-[80%]"></img>
           </div>
         </div>
       </div>

@@ -40,6 +40,28 @@ const slides = [
 ];
 
 const Carousel = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setViewportHeight(window.innerHeight);
+    };
+    handleResize(); // aktualizacja przy starcie
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = windowWidth < 600;
+  const gradientWidth = windowWidth * 0.1;
+  const gradientHeight = windowWidth * 0.1;
+
+  const backgroundStyle = {
+    height: `300px`, // lepsze niż 100vh na Safari
+    background: `radial-gradient(${gradientWidth}px ${gradientHeight}px at 60% 50%, #b96154 0%, black 100%)`,
+    transition: "background 0.1s ease-out",
+  };
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const intervalRef = useRef(null);
@@ -130,11 +152,11 @@ const Carousel = () => {
                   <p className="sm:text-white text-black">{slide.step}</p>
                   <div className="flex items-center ">
                     {/* Text Content - Left Side */}
-                    <div className=" w-full md:w-2/3 pr-8">
+                    <div className=" w-full lg:w-2/3 pr-8">
                       {" "}
                       {/* Added right padding for spacing */}
                       <div className="flex items-center ">
-                        <h2 className="text-black text-4xl   sm:text-5xl md:text-7xl sm:text-white font-bold">
+                        <h2 className="text-black text-4xl   sm:text-5xl md:text-7xl sm:text-white font-semibold">
                           {slide.title}
                         </h2>
                         <svg
@@ -159,12 +181,13 @@ const Carousel = () => {
                     </div>
 
                     {/* Image - Right Side */}
-                    <div className="hidden md:block w-1/3 h-full">
-                      <img
-                        src={myImagee}
-                        alt={`Slide ${index}`}
-                        className="w-full h-full object-cover rounded-lg" // Added rounded corners
-                      />
+                    <div
+                      style={backgroundStyle}
+                      className="relative hidden lg:flex justify-center items-center w-1/3 h-full text-8xl"
+                    >
+                      <div className="absolute left-[52%] top-[35%]  text-8xl">
+                        {index + 1}.
+                      </div>
                     </div>
                   </div>
                 </div>

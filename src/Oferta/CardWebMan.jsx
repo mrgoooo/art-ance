@@ -18,8 +18,8 @@ function CardWebMan() {
           </p>
           <div className="h-full flex flex-col  justify-end pb-8 pl-6 md:pl-12">
             <ArrowButtonComp
-              arrowColor="#060117"
-              textColor="black/60"
+              arrowColor="#00000099"
+              textColor="text-black/60"
               to="/oferta/web-managment"
             />
           </div>

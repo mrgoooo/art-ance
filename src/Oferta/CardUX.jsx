@@ -27,7 +27,7 @@ function CardUX() {
         <div className="pb-8 pl-6 md:pl-12 flex justify-start z-10 mt-auto">
           <ArrowButtonComp
             to="/oferta/UX-UI"
-            textColor="black/70"
+            textColor="text-black/70"
             arrowColor="#060117"
           />
         </div>

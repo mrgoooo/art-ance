@@ -171,9 +171,9 @@ const OpinionsCarousel = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-[371.23px] h-[20.84px] pr-[192.23px] pt-[1.05px] pb-[2.80px] justify-start items-center gap-[19.22px] inline-flex ml-16">
+                <div className=" w-[371.23px] h-[20.84px] pr-[192.23px] pt-[1.05px]  justify-start items-center gap-[19.22px] inline-flex ml-16">
                   <div className="w-[61.78px] h-[3.86px] bg-black sm:bg-white" />
-                  <div className="w-[98px] h-[17px] text-black sm:text-white text-base  leading-[20.86px] tracking-tight">
+                  <div className="w-[98px] h-[17px] text-black sm:text-white text-base  leading-[20.86px] tracking-tight ">
                     {slide.author}
                   </div>
                 </div>
