@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 function WDHero() {
   return (
     <div className="relative flex flex-col h-min-screen">
-      <header className="hidden lg:bock text-[120px] text-white pl-16">
+      <header className=" bg-slate-300 hidden lg:bock text-[120px] text-white pl-16 ">
         Web Development
       </header>
 
-      <header className="text-[40px] lg:text-[120px] text-white pl-16 leading-none">
+      <header className="text-[40px] lg:text-[120px] text-white pl-16 leading-none mt-10">
         Web Development
       </header>
 
