@@ -38,7 +38,7 @@ function LastFooter() {
 
       <address className=" flex flex-col  lg:flex-row text-2xl items-center justify-between mt-10 not-italic">
         {/* Kontakt */}
-        <div className="text-gray-400">
+        <div className="text-gray-400 text-xl md:text-2xl">
           <p>
             Email: <span className="text-white">info@artance.pl</span>
           </p>
