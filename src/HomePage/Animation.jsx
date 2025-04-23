@@ -31,7 +31,7 @@ const GradientAnimation = () => {
       style={backgroundStyle}
       className="flex items-center justify-center"
     >
-      <div className="h-[150px] flex flex-row text-white animate-fade-in-slow">
+      <div className="h-[120px] md:h-[150px] flex  text-white animate-fade-in-slow">
         <img src={Image} alt="Logo" loading="lazy" />
       </div>
     </a>
