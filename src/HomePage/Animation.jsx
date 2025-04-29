@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "../assets/images/logoprzycięte.png";
+import Navbar from "../Components/Navbar";
 
 const GradientAnimation = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -17,24 +18,24 @@ const GradientAnimation = () => {
 
   const isMobile = windowWidth < 600;
   const gradientWidth = isMobile ? 130 : windowWidth * 0.5;
-  const gradientHeight = isMobile ? 380 : 750 * 0.5;
+  const gradientHeight = isMobile ? 380 : 800 * 0.5; //750
 
   const backgroundStyle = {
     height: `${viewportHeight}px`, // lepsze niż 100vh na Safari
     background: `radial-gradient(${gradientWidth}px ${gradientHeight}px at center, #b96154 0%, black 100%)`,
-    transition: "background 0.1s ease-out",
   };
 
   return (
-    <a
-      href="/"
-      style={backgroundStyle}
-      className="flex items-center justify-center"
-    >
-      <div className="h-[120px] md:h-[150px] flex  text-white animate-fade-in-slow">
-        <img src={Image} alt="Logo" loading="lazy" />
+    <div style={backgroundStyle} className="h-screen w-screen flex flex-col">
+      <Navbar />
+      <div className="flex-grow flex items-center justify-center pb-24">
+        <a href="/">
+          <div className="h-[120px] md:h-[150px] flex text-white animate-fade-in-slow">
+            <img src={Image} alt="Logo" loading="lazy" />
+          </div>
+        </a>
       </div>
-    </a>
+    </div>
   );
 };
 

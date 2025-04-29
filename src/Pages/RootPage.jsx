@@ -13,7 +13,6 @@ export default function RootPage() {
 
   useEffect(() => {
     return () => {
-      console.log("Komponent odmontowany, wykonuję kod na odchodne");
       sessionStorage.setItem(`scroll-${selectedSection}`, window.scrollY);
       sessionStorage.setItem("selectedSection", selectedSection);
     };
@@ -23,7 +22,6 @@ export default function RootPage() {
     <div className="w-full bg-black text-white flex flex-col">
       {/* Navbar */}
 
-      <Navbar />
       {/* Main Content */}
       <main className=" relative flex flex-col items-center justify-center w-full">
         <div className="w-full">

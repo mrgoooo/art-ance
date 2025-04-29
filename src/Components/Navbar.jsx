@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav className="z-30">
-      <header className="w-full flex justify-between items-center p-4 bg-black">
+      <header className="w-full flex justify-between items-center p-4 ">
         <button onClick={() => navigate("/")} className="text-2xl font-bold">
           <img src={Image} className="h-8 w-8" alt="Logo" />
         </button>
