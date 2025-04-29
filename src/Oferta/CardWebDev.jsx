@@ -27,7 +27,7 @@ const CardWebDev = () => {
               rozwiązanie idealnie dopasowane <br /> do Twoich potrzeb.
             </div>
             <div className="h-full flex flex-col  justify-end pb-8 pl-6 md:pl-12">
-              <ArrowButtonComp to="/oferta/webdev" />
+              <ArrowButtonComp to="/oferta/webdev" textColor="text-white/80" />
             </div>
           </div>
           <div className="lg:flex hidden h-full items-end justify-end pr-8 pb-4">

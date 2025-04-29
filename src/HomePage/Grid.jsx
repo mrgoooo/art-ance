@@ -20,7 +20,9 @@ const Grid = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2  ">
           <div className="flex flex-col  text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className=" text-7xl sm:text-8xl sm:pb-8">10+</div>
+              <div className=" text-7xl sm:text-8xl sm:pb-8 font-normal">
+                10+
+              </div>
               <div className=" text-xl sm:text-2xl text-white/60">
                 Zrealizowanych projektów
               </div>
@@ -32,7 +34,7 @@ const Grid = () => {
 
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-7xl sm:text-8xl sm:pb-8">5+</div>
+              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">5+</div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Lat doświadczenia w <br />
                 branży.
@@ -42,7 +44,7 @@ const Grid = () => {
 
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-7xl sm:text-8xl sm:pb-8">14</div>
+              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">14</div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Dni od rozpoczęcia
                 <br />
@@ -53,7 +55,9 @@ const Grid = () => {
 
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-7xl sm:text-8xl sm:pb-8">100%</div>
+              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">
+                100%
+              </div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Zadowolonych klientów z <br />
                 różnych branż.

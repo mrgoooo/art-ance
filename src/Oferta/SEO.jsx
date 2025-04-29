@@ -7,11 +7,10 @@ function SEO() {
       <div className="w-[90%] flex flex-col h-full ">
         <h2 className=" text-4xl px-8 pt-8 pb-2">SEO</h2>
         <p className="hidden md:block text-white/60 text-xl pl-8 pb-4">
-          Pomożemy Twojej stronie zaistnieć w wynikach <br /> wyszukiwania
-          Google i innych wyszukiwarek. <br /> Optymalizujemy treści, strukturę
-          strony oraz <br />
-          techniczne aspekty witryny, aby poprawić jej <br /> widoczność i
-          przyciągnąć organiczny ruch.
+          Pomożemy Twojej stronie zaistnieć w wynikach wyszukiwania Google i
+          innych wyszukiwarek. Optymalizujemy treści, strukturę strony oraz{" "}
+          techniczne aspekty witryny, aby poprawić jej widoczność i przyciągnąć
+          organiczny ruch.
         </p>
         <p className=" md:hidden text-white/60 text-sm sm:text-[20px] leading-7 pl-8 pb-4">
           Pomożemy Twojej stronie zaistnieć w <br /> wynikach wyszukiwania
@@ -20,8 +19,8 @@ function SEO() {
           aspekty witryny, aby poprawić jej <br /> widoczność i przyciągnąć
           organiczny ruch.
         </p>
-        <div className="relative hidden lg:flex justify-center ">
-          <img src={Image} className=" w-[80%]"></img>
+        <div className="relative hidden lg:flex justify-end  w-full">
+          <img src={Image} className="mr-8 w-[80%]"></img>
         </div>
 
         <div className="  pb-8  pl-6 md:pl-12 flex justify-start items-end ">

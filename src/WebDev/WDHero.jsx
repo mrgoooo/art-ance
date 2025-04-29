@@ -10,7 +10,7 @@ function WDHero() {
         Web Development
       </header>
 
-      <header className="text-[40px] lg:text-[120px] text-white pl-16 leading-none mt-10">
+      <header className="text-[40px] lg:text-[120px] text-white sm:pl-16 leading-none mt-10">
         Web Development
       </header>
 

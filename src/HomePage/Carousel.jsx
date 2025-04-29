@@ -174,7 +174,7 @@ const Carousel = () => {
                           />
                         </svg>
                       </div>
-                      <p className=" pt-10 text-gray-600 text-lg sm:text-2xl">
+                      <p className=" pt-10 text-white/60 text-lg sm:text-2xl">
                         {slide.description}
                       </p>
                       {/* Add additional buttons or elements if needed */}
@@ -185,7 +185,7 @@ const Carousel = () => {
                       style={backgroundStyle}
                       className="relative hidden lg:flex justify-center items-center w-1/3 h-full text-8xl"
                     >
-                      <div className="absolute left-[52%] top-[35%]  text-8xl">
+                      <div className="absolute left-[52%] top-[35%]  text-8xl font-normal">
                         {index + 1}.
                       </div>
                     </div>

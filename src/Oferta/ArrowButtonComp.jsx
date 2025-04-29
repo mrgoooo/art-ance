@@ -10,7 +10,7 @@ function ArrowButtonComp({
 
   return (
     <button
-      className="w-[194.59px] h-[50px] flex justify-center items-center"
+      className="w-[210px] h-[50px] flex justify-center items-center"
       onClick={() => navigate(to)} // Przekierowanie na podany adres
     >
       <div>

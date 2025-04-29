@@ -9,7 +9,7 @@ const ShineText = () => {
       <RevealOnScroll>
         <div className=" hidden md:flex md:flex-col xl:flex-row h-full w-full items-center justify-center pb-24 ">
           <img src={Image} className="h-[130px] xl:mr-10"></img>
-          <h2 className="text-[90px] text-center text-white  tracking-tighter">
+          <h2 className="text-[90px] text-center text-white  tracking-tighter font-normal">
             We make You <span className="">shine</span> Online
           </h2>
         </div>

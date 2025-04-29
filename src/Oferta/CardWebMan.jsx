@@ -6,7 +6,7 @@ function CardWebMan() {
       <div className="flex justify-between h-full">
         <div className="w-full lg:w-[70%] flex flex-col">
           <h2 className="pl-8 pt-8 text-4xl pb-3">Web Managment</h2>
-          <p className="hidden lg:block pl-8 text-lg text-black/80">
+          <p className="hidden lg:block pl-8 text-xl text-black/80">
             Kompleksowe zarządzanie stronami <br /> internetowymi, od
             serwerowania po <br /> regularne aktualizacji, SEO, <br />
             prowadzenie bloga i optymalizację <br /> wydajności.

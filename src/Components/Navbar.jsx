@@ -12,7 +12,6 @@ export default function Navbar() {
 
   useEffect(() => {
     return () => {
-      console.log("Komponent odmontowany, wykonuję kod na odchodne");
       sessionStorage.setItem(`scroll-${selectedSection}`, window.scrollY);
       sessionStorage.setItem("selectedSection", selectedSection);
     };
@@ -34,7 +33,7 @@ export default function Navbar() {
             ].map((section) => (
               <li key={section.name}>
                 <button
-                  className="text-white text-lg hover:text-neutral-500 transition duration-300"
+                  className="text-white text-lg hover:text-neutral-500 transition duration-300 font-['Inter'] tracking-wide font-light"
                   onClick={() => navigate(section.path)}
                 >
                   {section.name}
@@ -78,14 +77,17 @@ export default function Navbar() {
           ].map((item, index) => (
             <button
               key={index}
-              className="block w-full text-left border-b border-gray-700 pb-2 text-white hover:text-neutral-500 transition duration-300"
+              className="block w-full text-left border-b border-gray-700 pb-2 text-white hover:text-neutral-500 transition duration-300 font-['Inter'] tracking-wide font-light"
               onClick={() => navigate(item.path)}
             >
               {item.name}
             </button>
           ))}
         </nav>
-        <button className="p-5" onClick={() => setIsSidebarOpen(false)}>
+        <button
+          className="p-5 hover:text-neutral-500 transition duration-300 font-['Inter'] tracking-wide font-light"
+          onClick={() => setIsSidebarOpen(false)}
+        >
           HIDE &gt;
         </button>
       </div>

@@ -37,7 +37,7 @@ const MotText = () => {
       </div>
 
       {/* Tekst na pierwszym planie */}
-      <h2 className="absolute hidden md:block text-7xl lg:text-8xl text-white text-center z-10">
+      <h2 className="absolute hidden md:block text-7xl lg:text-8xl text-white text-center z-10 font-normal">
         Ty prowadzisz swój <br /> Biznes, My zajmiemy się <br /> Twoją stroną.
       </h2>
       <div className="flex flex-col md:hidden w-[90%] bg-white rounded-xl">

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <header className="w-full flex flex-col items-center">
       <div className="w-[95%] ">
-        <h2 className="hidden md:block text-xl sm:text-3xl lg:text-5xl pt-10 px-5">
+        <h2 className="hidden md:block text-xl sm:text-3xl lg:text-5xl pt-10 px-5 font-normal">
           Z nami Twoja marka zyska nowy digital
         </h2>
         <h2 className="hidden md:block text-5xl sm:text-6xl lg:text-[170px] xl:text-[230px] px-5 text-right pb-14">
