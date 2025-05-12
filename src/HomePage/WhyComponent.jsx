@@ -25,7 +25,7 @@ const WhyComponent = () => {
     transition: "background 0.1s ease-out",
   };
   return (
-    <header className="w-full hidden relative h-screen bg-black  xl:flex flex-col  items-center">
+    <header className="w-full hidden relative h-screen bg-black  lg:flex flex-col  items-center">
       <div className="w-3/4 z-20">
         <NormalLine />
       </div>
@@ -44,15 +44,18 @@ const WhyComponent = () => {
             Pracować?
           </div>
         </div>
-        <div className="w-full h-full flex items-center justify-center z-20 ">
-          <p
-            className="text-slate-200 text-2xl md:text-3xl lg:text-4xl text-justify lg:text-right lg "
-            // Możesz dynamicznie zmieniać tę wartość
-          >
-            Każdy projekt traktujemy indywidualnie, dbając o precyzję i
-            transparentność na każdym kroku. Nasze podejście łączy kreatywność,
-            doświadczenie techniczne i bliską współpracę z klientem, aby
-            stworzyć produkt, który przekracza oczekiwania.
+        <div className="w-full  h-full flex items-center justify-center z-20 ">
+          <p className=" w-full text-slate-200 text-2xl md:text-3xl lg:3xl xl:text-4xl lg:text-right ">
+            Każdy projekt traktujemy <br /> indywidualnie, dbając o <br />{" "}
+            precyzję i <br />
+            transparentność na <br /> każdym kroku. Nasze <br />
+            podejście łączy kreatywność, <br />
+            doświadczenie <br />
+            techniczne i bliską
+            <br /> współpracę z klientem,
+            <br /> aby stworzyć produkt,
+            <br /> który przekracza
+            <br /> oczekiwania.
           </p>
         </div>
       </div>

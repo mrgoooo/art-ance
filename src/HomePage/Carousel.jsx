@@ -156,7 +156,7 @@ const Carousel = () => {
                       {" "}
                       {/* Added right padding for spacing */}
                       <div className="flex items-center ">
-                        <h2 className="text-black text-4xl   sm:text-5xl md:text-7xl sm:text-white font-semibold">
+                        <h2 className="text-black text-4xl   sm:text-5xl md:text-7xl sm:text-white font-normal">
                           {slide.title}
                         </h2>
                         <svg
@@ -183,7 +183,7 @@ const Carousel = () => {
                     {/* Image - Right Side */}
                     <div
                       style={backgroundStyle}
-                      className="relative hidden lg:flex justify-center items-center w-1/3 h-full text-8xl"
+                      className="relative hidden justify-center items-center w-1/3 h-full text-8xl"
                     >
                       <div className="absolute left-[52%] top-[35%]  text-8xl font-normal">
                         {index + 1}.

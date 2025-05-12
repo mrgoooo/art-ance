@@ -67,10 +67,7 @@ const Advantages = () => {
   const [selectedText, setSelectedText] = useState(text[0]);
 
   const handleButtonClick = (text, buttonName) => {
-    // Ustawiamy flagę, aby kontrolować animację
     setIsTextChanging(true);
-
-    // Po 0.25s (czas animacji) zmieniamy tekst i przycisk
 
     setSelectedText(text);
     setSelectedButton(buttonName); // Ustawiamy nazwę przycisku, który został kliknięty
@@ -87,7 +84,7 @@ const Advantages = () => {
           <div className="w-1/2 p-4 flex flex-col items-start space-y-4 text-white text-4xl  ">
             <button
               onClick={() => handleButtonClick(text[0], "WEB Development")}
-              className={`p-5 rounded  transition-transform duration-1000  font-normal${
+              className={`p-5 rounded  transition-transform duration-1000  font-normal ${
                 selectedButton === "WEB Development"
                   ? "text-white translate-x-20"
                   : "text-gray-500"
@@ -97,7 +94,7 @@ const Advantages = () => {
             </button>
             <button
               onClick={() => handleButtonClick(text[1], "UI/UX Design")}
-              className={`p-5 rounded  transition-transform duration-1000 font-normal${
+              className={`p-5 rounded  transition-transform duration-1000 font-normal ${
                 selectedButton === "UI/UX Design"
                   ? "text-white translate-x-20"
                   : "text-gray-500"
@@ -107,7 +104,7 @@ const Advantages = () => {
             </button>
             <button
               onClick={() => handleButtonClick(text[2], "SEO")}
-              className={`p-5 rounded transition-transform duration-1000 :hover font-normal${
+              className={`p-5 rounded transition-transform duration-1000 :hover font-normal ${
                 selectedButton === "SEO"
                   ? "text-white translate-x-20"
                   : "text-gray-500"

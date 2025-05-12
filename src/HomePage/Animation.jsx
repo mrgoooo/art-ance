@@ -26,7 +26,7 @@ const GradientAnimation = () => {
   };
 
   return (
-    <div style={backgroundStyle} className="h-screen w-screen flex flex-col">
+    <div style={backgroundStyle} className="h-screen w-full flex flex-col">
       <Navbar />
       <div className="flex-grow flex items-center justify-center pb-24">
         <a href="/">

@@ -27,7 +27,7 @@ const Grid = () => {
                 Zrealizowanych projektów
               </div>
               <div className="text-xl sm:text-2xl text-white/60">
-                W Polsce i zagranicą
+                W Polsce i za granicą
               </div>
             </div>
           </div>

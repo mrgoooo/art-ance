@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1450px", // Dodaj breakpoint między xl a full
+      },
       backgroundImage: {
         "gradient-red-black":
           "radial-gradient(450px 300px at center, #b96154 0%, black 100%)",
