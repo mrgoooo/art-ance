@@ -11,8 +11,8 @@ function WManHero() {
         <img src={Image} className="w-[700px]"></img>
       </div>
 
-      <p className="hidden lg:block w-full justify-center sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[56px] xL:leading-[66px]">
-        Nasze usługi Web Management to coś więcej niż tylko utrzymanie strony –{" "}
+      <p className="hidden lg:block w-full justify-center sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[56px] xl:leading-[70px]">
+        Nasze usługi Web Management to coś więcej niż tylko utrzymanie strony –
         <br />
         Zapewniamy bezpieczeństwo, stałą aktualizację i pełne wsparcie
         techniczne, abyś Ty mógł skupić się na rozwoju swojego biznesu.

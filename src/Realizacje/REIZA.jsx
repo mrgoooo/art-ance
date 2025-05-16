@@ -22,10 +22,10 @@ function REIZA() {
             </p>
 
             {/* Statystyka */}
-            <div className="mt-2 flex  items-start gap-2">
+            <div className="mt-6 flex  items-start gap-2 ">
               <svg
-                width="70"
-                height="70  "
+                width="40"
+                height="70"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,17 +36,19 @@ function REIZA() {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M29.9982 10H9.99819V13.3333H24.3086L9.30859 28.3334L11.6656 30.6904L26.6649 15.6912V30H29.9982V10Z"
-                    fill="#a00040"
+                    fill="#03BD7F"
                   />
                 </g>
               </svg>
+
               <div>
                 <p className="text-lg sm:text-xl  text-black pt-5">
                   75% większy zasięg, 
                 </p>
 
                 <p className="text-[10px] text-gray-500  sm:text-sm">
-                  skuteczniejsza komunikacja. Twoja marka w centrum uwagi,
+                  skuteczniejsza komunikacja. Twoja marka w centrum uwagi,{" "}
+                  <br />
                   zawsze o krok przed konkurencją.
                 </p>
               </div>

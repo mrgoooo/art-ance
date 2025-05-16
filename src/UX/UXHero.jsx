@@ -14,16 +14,16 @@ function UXHero() {
         <div className=" h-full w-full flex items-center">
           <div className="pt-10 w-full">
             <div className="w-2/3 hidden md:block lg:w-[588px] justify-center text-[#060017] text-3xl lg:text-[52px] font-normal  lg:leading-[66px]">
-              “Wyglad strony to 90% sukcesu. Twoja Strona=
+              “Wygląd strony to 90% sukcesu. Twoja Strona=
               <br />
-              Twoja Wizytowka”
+              Twoja Wizytówka”
             </div>
             <div className=" md:hidden w-full  lg:w-[588px] justify-center text-[#060017] text-xl lg:text-[52px] font-normal  lg:leading-[66px]">
-              “Wyglad strony to 90% sukcesu. <br /> Twoja Strona = Twoja
-              Wizytowka”
+              “Wygląd strony to 90% sukcesu. <br /> Twoja Strona = Twoja
+              Wizytówka”
             </div>
             <div className="hidden md:block justify-center text-[#060017]/60 text-[22px] font-normal leading-loose">
-              -Zespol kreatywny ARTANCE.
+              -Zespół kreatywny ARTANCE.
             </div>
             <div className="flex justify-center md:justify-start items-start">
               <Link

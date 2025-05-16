@@ -94,9 +94,10 @@ function WDEcommer() {
             </h2>
           </div>
         </div>
-        <div className=" grid grid-cols-1 lg:grid-cols-2  rounded-2xl">
+        <div className=" grid grid-cols-1 lg:grid-cols-2  rounded-2xl relative">
           {/* Pakiet Na Start */}
-          <div className="flex-1 md:bg-white p-4 bg-opacity-30   md:p-8 rounded-2xl">
+          <div className="hidden lg:block absolute left-0 top-[10%] h-[80%] border-l-2 border-black"></div>
+          <div className="flex-1 md:bg-white p-4 bg-opacity-30   md:p-8 rounded-2xl  lg:rounded-none">
             <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3">
               Na Start
             </h2>
@@ -133,7 +134,7 @@ function WDEcommer() {
           </div>
 
           {/* Pakiet Plus */}
-          <div className="flex-1 bg-white bg-opacity-5 md:bg-white p-4 md:p-8 rounded-2xl">
+          <div className="flex-1 bg-white bg-opacity-5 md:bg-white p-4 md:p-8 border-black  rounded-2xl lg:rounded-none flex flex-col justify-between lg:self-center">
             <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3">
               Plus
             </h2>

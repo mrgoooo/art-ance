@@ -114,9 +114,9 @@ function WDWhy() {
           ].map((item, index) => (
             <div
               key={index}
-              className="w-full max-w-[410px] h-auto bg-white bg-opacity-10 rounded-[20px] overflow-hidden p-6 md:p-10 "
+              className="w-full max-w-[410px] h-full bg-white bg-opacity-10 rounded-[20px] overflow-hidden p-6 md:p-10 flex flex-col justify-between"
             >
-              <div className="flex  flex-col gap-2">
+              <div className="flex flex-col gap-2 flex-1">
                 <h3 className="text-white text-lg md:text-xl font-normal leading-relaxed">
                   {item.title}
                 </h3>
@@ -125,7 +125,7 @@ function WDWhy() {
                 </p>
               </div>
               <img
-                className="w-full max-w-[350px] mx-auto mt-6 rounded-xl border border-white border-opacity-20"
+                className="w-full max-w-[400px] max-h-[210px] mx-auto mt-6 rounded-xl"
                 src={item.img}
                 alt={item.title}
               />

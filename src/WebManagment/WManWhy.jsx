@@ -27,7 +27,7 @@ function WManWhy() {
   return (
     <div className="flex flex-col w-[95%] h-full pb-8 rounded-2xl z-10">
       <section className=" relative py-12 bg-white   bg-opacity-25 px-6 md:px-12 rounded-2xl overflow-hidden">
-        <h2 className="text-lg text-black sm:text-5xl   mb-4">
+        <h2 className="text-lg text-black sm:text-[32px] font-normal  mb-4">
           Dlaczego warto zainwestować w profesjonalne zarządzanie stroną?
         </h2>
 

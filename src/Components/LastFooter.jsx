@@ -50,21 +50,21 @@ function LastFooter() {
         {/* Social media */}
         <div className="w-full lg:w-1/3 flex  text-white text-xl justify-between  pt-8">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61574673092422"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebookF />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/artance.cc/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/artance-web-solutions/about/"
             target="_blank"
             rel="noopener noreferrer"
           >

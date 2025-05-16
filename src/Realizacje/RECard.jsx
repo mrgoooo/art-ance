@@ -48,7 +48,7 @@ const projects = [
     logo: "",
     gradient: "bg-gradient-to-b from-[#060017] to-[#a00040]",
     content:
-      "Trenerzy personalni, artyści i eksperci z różnych branż rezygnują z przestarzałych rozwiązań na rzecz stron, które budują ich markę osobistą i robią wrażenie na odbiorcach.",
+      "Nasza strona internetowa wreszcie odzwierciedla profesjonalizm, który chcemy przekazać naszym klientom. Dzięki niej skutecznie budujemy naszą markę i przyciągamy nowych klientów.",
   },
 ];
 

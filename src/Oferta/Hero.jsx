@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <header className="w-full flex flex-col items-center">
+    <header className="w-full flex flex-col items-center xl:mb-10">
       <div className="w-[95%] ">
         <h2 className="hidden md:block text-xl sm:text-3xl lg:text-5xl pt-10 px-5 font-normal">
           Z nami Twoja marka zyska nowy digital
