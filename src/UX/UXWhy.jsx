@@ -2,20 +2,19 @@ import Image from "../assets/images/women_img.png";
 import RevealOnScroll from "../animations/RevealAnimation";
 import { useEffect } from "react";
 
-function ArrowIcon() {
+function ArrowIcon({ className = "" }) {
   return (
     <svg
-      width="40"
-      height="40"
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g id="Frame">
         <path
           id="Vector"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M29.9982 10H9.99819V13.3333H24.3086L9.30859 28.3334L11.6656 30.6904L26.6649 15.6912V30H29.9982V10Z"
           fill="black"
         />
@@ -23,12 +22,11 @@ function ArrowIcon() {
     </svg>
   );
 }
-
 function OkIcon() {
   return (
     <svg
-      width="24"
-      height="26"
+      width="35"
+      height="35"
       viewBox="0 0 24 26"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +65,9 @@ function UXWhy() {
             <div className="space-y-4 pt-8 lg:pt-24">
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className=" pt-1">
-                      <ArrowIcon />
-                    </div>
-                    <h3 className="text:lg md:text-[32px]  text-gray-900">
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
+                    <h3 className="text:lg md:text-[32px]  text-gray-900 text-">
                       Większa konwersja
                     </h3>
                   </div>
@@ -82,10 +78,8 @@ function UXWhy() {
               </div>
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className=" pt-1">
-                      <ArrowIcon />
-                    </div>
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
                     <h3 className="text:lg md:text-[32px]  text-gray-900">
                       Wzrost lojalność klientów
                     </h3>
@@ -98,10 +92,8 @@ function UXWhy() {
               </div>
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className="pt-1">
-                      <ArrowIcon />
-                    </div>
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
                     <h3 className="text:lg md:text-[32px]  text-gray-900">
                       Przewaga konkurencyjna
                     </h3>
@@ -125,10 +117,10 @@ function UXWhy() {
       <section className="mt-10 rounded-2xl md:py-12 ">
         <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* UX Design */}
-          <div className="  bg-[#f5e3d8] p-6 rounded-2xl shadow-md ">
+          <div className="  bg-white bg-opacity-20 p-6 rounded-2xl shadow-md ">
             <h2 className="text-lg md:text-[26px] mb-6 ">
               <span>Projektowanie UX</span>
-              <span className="text-gray-500">(User Experience)</span>
+              <span className="text-gray-500"> (User Experience)</span>
             </h2>
             <p className="hidden md:block rounded mb-4  text-[#060017]/60 leading-tight">
               To sposób, w jaki użytkownik czuje się <br /> podczas korzystania
@@ -139,25 +131,25 @@ function UXWhy() {
               z produktu – czy jest <br /> prosty, wygodny i przyjemny.
             </p>
             <ul className="list-none space-y-4  text-[#060017]/75 text-xs md:text-lg pt-8 md:pt-28">
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon /> Badania użytkowników i analiza ich potrzeb.
               </li>
-              <li className="hidden md:flex">
+              <li className="hidden md:flex md:items-center">
                 <OkIcon />
                 Tworzenie person i scenariuszy użytkowników.
               </li>
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon />
                 Tworzenie wireframe’ów i prototypów.
               </li>
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon /> Testy użyteczności i optymalizacja interfejsu.
               </li>
             </ul>
           </div>
 
           {/* UI Design */}
-          <div className=" bg-[#f5e3d8] p-6 rounded-2xl shadow-md">
+          <div className=" bg-white bg-opacity-20 p-6 rounded-2xl shadow-md">
             <h2 className="text-lg md:text-[26px]  text-gray-900 mb-6 ">
               Projektowanie <span className="text-gray-700">UI</span>{" "}
               <span className="text-gray-500">(User Interface)</span>
@@ -171,17 +163,17 @@ function UXWhy() {
               wszystko, co widzisz na ekranie.
             </p>
             <ul className="list-none space-y-4 text-[#060017]/75 text-xs md:text-lg pt-8 md:pt-28 ">
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon /> Tworzenie nowoczesnych i estetycznych interfejsów.
               </li>
-              <li className="hidden md:flex">
+              <li className="hidden md:flex md:items-center">
                 <OkIcon />
                 Projektowanie zgodne z zasadami usability i accessibility.
               </li>
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon /> Dobór kolorów, typografii i ikon.
               </li>
-              <li className="flex">
+              <li className="flex items-center">
                 <OkIcon /> Implementacja interakcji i animacji.
               </li>
             </ul>

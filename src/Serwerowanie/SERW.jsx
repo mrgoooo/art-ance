@@ -7,6 +7,7 @@ import SEROWffer from "./SERWOffer";
 import SERWPytania from "./SERWPytania";
 import SERWWhy from "./SERWWhy";
 import SERWMot from "./SERWMot";
+import SERWUsługi from "./SERWUsługi";
 
 function SERW() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function SERW() {
           <SERWHero />
           <SERWWhy />
           <SERWMot />
+          <SERWUsługi />
           <SEROWffer />
           <SERWPytania />
         </div>

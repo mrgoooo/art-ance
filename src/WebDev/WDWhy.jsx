@@ -3,14 +3,13 @@ import Grid1 from "../assets/images/Grid1.png";
 import Grid3 from "../assets/images/Grid3.jpg";
 import Grid2 from "../assets/images/Grid2.png";
 
-function ArrowIcon({ width = 40, height = 40 }) {
+function ArrowIcon({ className = "" }) {
   return (
     <svg
-      width={width}
-      height={height}
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g id="Frame">
         <path
@@ -25,30 +24,10 @@ function ArrowIcon({ width = 40, height = 40 }) {
   );
 }
 
-function OkIcon() {
-  return (
-    <svg
-      width="24"
-      height="26"
-      viewBox="0 0 24 26"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g id="Frame">
-        <path
-          id="Vector"
-          d="M7.70831 13.1917C7.31919 12.7898 6.67602 12.7853 6.28127 13.1817L6.20938 13.2539C5.81817 13.6467 5.82124 14.2828 6.2162 14.6719L9.99992 18.3991L17.2896 11.1572C17.6817 10.7677 17.6835 10.1339 17.2934 9.74218L17.2131 9.66156C16.8205 9.26724 16.1814 9.26934 15.7914 9.66622L9.99992 15.5588L7.70831 13.1917Z"
-          fill="#050038"
-        />
-      </g>
-    </svg>
-  );
-}
-
 function WDWhy() {
   return (
     <div className="flex flex-col w-[95%] h-full pb-8 rounded-2xl z-10">
-      <section className="relative py-12 bg-white bg-opacity-10 md:bg-opacity-25 px-6 md:px-12 rounded-2xl overflow-hidden">
+      <section className="relative py-12 bg-white bg-opacity-10 md:bg-opacity-10 px-6 md:px-12 rounded-2xl overflow-hidden">
         <h2 className="text-lg sm:text-[25px] lg:text-[19px]  text-white mb-4">
           Nowoczesne strony, które robią różnicę
         </h2>
@@ -63,11 +42,10 @@ function WDWhy() {
             <div className="space-y-4 pt-14 lg:pt-24 ">
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className="pt-1   ">
-                      <ArrowIcon />
-                    </div>
-                    <h3 className="text-lg sm:text-[28px] md:text-[32px]  text-white">
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
+
+                    <h3 className="text-lg sm:text-[28px]   md:text-[32px]  text-white pt-1">
                       Spersonalizowany Design
                     </h3>
                   </div>
@@ -78,11 +56,10 @@ function WDWhy() {
               </div>
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className=" pt-1">
-                      <ArrowIcon />
-                    </div>
-                    <h3 className="text-lg sm:text-[28px] md:text-[32px]   text-white">
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
+
+                    <h3 className="text-lg sm:text-[28px] md:text-[32px] pt-1   text-white">
                       Optymalizacja SEO
                     </h3>
                   </div>
@@ -93,11 +70,9 @@ function WDWhy() {
               </div>
               <div className="flex items-start space-x-3">
                 <div>
-                  <div className="flex">
-                    <div className="pt-1">
-                      <ArrowIcon />
-                    </div>
-                    <h3 className="text-lg sm:text-[28px] md:text-[32px]   text-white">
+                  <div className="flex items-center">
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
+                    <h3 className="text-lg sm:text-[28px] md:text-[32px] pt-1   text-white">
                       integracja API
                     </h3>
                   </div>
