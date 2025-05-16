@@ -71,7 +71,7 @@ function UXWhy() {
                       Większa konwersja
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px]">
+                  <p className="text-gray-700 text-xs md:text-[13px]">
                     Lepsze doświadczenie użytkownika oznacza większą sprzedaż.
                   </p>
                 </div>
@@ -79,12 +79,12 @@ function UXWhy() {
               <div className="flex items-start space-x-3">
                 <div>
                   <div className="flex items-center">
-                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 b" />
+                    <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                     <h3 className="text:lg md:text-[32px]  text-gray-900">
                       Wzrost lojalność klientów
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px]">
+                  <p className="text-gray-700 text-xs md:text-[13px]">
                     Intuicyjna nawigacja sprawia, że użytkownicy chętniej
                     wracają.
                   </p>
@@ -98,7 +98,7 @@ function UXWhy() {
                       Przewaga konkurencyjna
                     </h3>
                   </div>
-                  <p className="text-gray-700 text-[10px] md:text-[13px]">
+                  <p className="text-gray-700 text-xs md:text-[13px]">
                     Nowoczesny design buduje profesjonalny wizerunek firmy.
                   </p>
                 </div>

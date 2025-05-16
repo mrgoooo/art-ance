@@ -1,5 +1,41 @@
 import Line from "./Line";
 import NormalLine from "./NormalLine";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+// ...existing imports...
+
+const AnimatedNumber = ({ target = 100, duration = 1500, znak = "%" }) => {
+  const [value, setValue] = useState(0);
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (!inView) return;
+    let start = 0;
+    const increment = target / (duration / 16);
+    let raf;
+
+    const animate = () => {
+      start += increment;
+      if (start < target) {
+        setValue(Math.floor(start));
+        raf = requestAnimationFrame(animate);
+      } else {
+        setValue(target);
+      }
+    };
+
+    animate();
+    return () => cancelAnimationFrame(raf);
+  }, [inView, target, duration]);
+
+  return (
+    <span ref={ref}>
+      {value}
+      {znak}
+    </span>
+  );
+};
+
 const Grid = () => {
   return (
     <section className="flex justify-center lg:h-full w-full bg-black flex-col items-center">
@@ -21,7 +57,7 @@ const Grid = () => {
           <div className="flex flex-col  text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
               <div className=" text-7xl sm:text-8xl sm:pb-8 font-normal">
-                10+
+                <AnimatedNumber target={10} duration={1500} znak="+" />
               </div>
               <div className=" text-xl sm:text-2xl text-white/60">
                 Zrealizowanych projektów
@@ -34,7 +70,9 @@ const Grid = () => {
 
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">5+</div>
+              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">
+                <AnimatedNumber target={5} duration={1500} znak="+" />
+              </div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Lat doświadczenia w <br />
                 branży.
@@ -44,7 +82,9 @@ const Grid = () => {
 
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
-              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">14</div>
+              <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">
+                <AnimatedNumber target={14} duration={1500} znak="" />
+              </div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Dni od rozpoczęcia
                 <br />
@@ -56,7 +96,7 @@ const Grid = () => {
           <div className="flex flex-col text-white sm:justify-center sm:items-center sm:p-24">
             <div className="">
               <div className="text-7xl sm:text-8xl sm:pb-8 font-normal">
-                100%
+                <AnimatedNumber target={100} duration={1500} />
               </div>
               <div className="text-xl sm:text-2xl text-white/60">
                 Zadowolonych klientów z <br />

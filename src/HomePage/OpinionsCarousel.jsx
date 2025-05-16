@@ -4,22 +4,22 @@ const slides = [
   {
     description:
       "Zespół doskonale zrozumiał nasze potrzeby i zaprojektował stronę, która wyróżnia się w naszej branży. Dodatkowo, dzięki regularnemu utrzymaniu strony, mamy pewność, że wszystko działa bez zarzutu.",
-    author: "J.Opłotny",
+    author: "N.Wójcik",
   },
   {
     description:
-      "Zespół doskonale zrozumiał nasze potrzeby i zaprojektował stronę, która wyróżnia się w naszej branży. Dodatkowo, dzięki regularnemu utrzymaniu strony, mamy pewność, że wszystko działa bez zarzutu.",
+      "Miałem pewne obawy, bo to mój pierwszy większy projekt online, ale chłopaki z Artance od razu wszystko wyjaśnili i poprowadzili mnie przez proces.",
     author: "K.Kowal",
   },
   {
     description:
-      "Zespół doskonale zrozumiał nasze potrzeby i zaprojektował stronę, która wyróżnia się w naszej branży. Dodatkowo, dzięki regularnemu utrzymaniu strony, mamy pewność, że wszystko działa bez zarzutu.",
-    author: "M.Zielek",
+      "Stronę miałem mieć za dwa miesiące – z Artance była gotowa po dwóch tygodniach. Ale nie chodzi tylko o szybkość. To, co naprawdę robi różnicę, to ich podejście: partnerskie, elastyczne i pełne zrozumienia. Nie musiałem niczego tłumaczyć dwa razy. Po prostu wiedzieli, jak zamienić moją wizję w działający projekt.",
+    author: "M.Jasiński",
   },
   {
     description:
-      "Zespół doskonale zrozumiał nasze potrzeby i zaprojektował stronę, która wyróżnia się w naszej branży. Dodatkowo, dzięki regularnemu utrzymaniu strony, mamy pewność, że wszystko działa bez zarzutu.",
-    author: "E.Mierzwa",
+      "Zaskoczyło mnie, jak bardzo Artance różni się od innych agencji. Zero lania wody, za to 100% zrozumienia mojego celu. Od pierwszego kontaktu czuć, że mają energię, wiedzę i pasję – wszystko, co potrzebne, by zbudować coś naprawdę wartościowego. Efekt? Strona gotowa w dwa tygodnie i gotowa do działania.",
+    author: "I.Mierzejewska",
   },
 ];
 
@@ -113,7 +113,7 @@ const OpinionsCarousel = () => {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
     >
-      <div className="h-[600px] w-[90%]  bg-black sm:w-3/4 lg:h-screen overflow-hidden flex flex-col justify-center ">
+      <div className="h-[650px] w-[90%]  bg-black sm:w-3/4 md:h-[800px]  xl:h-[600px] overflow-hidden flex flex-col justify-center lg:mb-8 ">
         {/* Slajdy */}
         <div className="hidden md:block mb-28">
           <Line text={["O", "PI", "NI", "E"]} />

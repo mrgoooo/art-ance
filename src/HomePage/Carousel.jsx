@@ -98,7 +98,7 @@ const Carousel = () => {
 
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Zmienia co 3 sekundy (3000 ms)
+    }, 10000); // Zmienia co 3 sekundy (3000 ms)
   };
 
   const handleTouchStart = (e) => {
@@ -152,7 +152,7 @@ const Carousel = () => {
                   <p className="sm:text-white text-black">{slide.step}</p>
                   <div className="flex items-center ">
                     {/* Text Content - Left Side */}
-                    <div className=" w-full lg:w-2/3 pr-8">
+                    <div className=" w-full lg:w-4/5 pr-8">
                       {" "}
                       {/* Added right padding for spacing */}
                       <div className="flex items-center ">

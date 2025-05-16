@@ -6,7 +6,7 @@ function CardSerw() {
       <div className="flex justify-between h-full">
         <div className=" w-full lg:w-[55%] flex flex-col ">
           <h2 className="pl-8 pt-8 text-4xl text-white pb-3">Serwerowanie</h2>
-          <p className="hidden lg:block pl-8 text-xl text-white/70">
+          <p className="hidden lg:block pl-8 lg:text-base text-white/70">
             Usługi serwerowe, które gwarantują <br /> stabilność, bezpieczeństwo
             i szybkie działanie Twojej strony internetowej.
           </p>

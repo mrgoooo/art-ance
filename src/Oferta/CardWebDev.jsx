@@ -11,12 +11,14 @@ const CardWebDev = () => {
             <div className="  text-white  text-[30px] lg:text-[64px]  leading-[60px] p-8">
               Web Development
             </div>
-            <div className="hidden md:block px-8 text-[20px]  pb-10 lg:pb-0 lg:text-xl  text-white/60 leading-5 md:leading-tight">
-              Dzięki wykorzystaniu najnowszych technologii zapewniamy szybkie
-              działanie i pełną kompatybilność na wszystkich urządzeniach.
-              Niezależnie od tego, czy potrzebujesz prostej witryny
-              informacyjnej, czy zaawansowanego systemu e-commerce, dostarczymy
-              rozwiązanie idealnie dopasowane do Twoich potrzeb.
+            <div className="w-full ">
+              <div className="w-[90%] w-hidden md:block px-8 text-[20px] pb-10 lg:pb-0 lg:text-base  text-white/60 leading-none">
+                Dzięki wykorzystaniu najnowszych technologii zapewniamy szybkie
+                działanie i pełną kompatybilność na wszystkich urządzeniach.
+                Niezależnie od tego, czy potrzebujesz prostej witryny
+                informacyjnej, czy zaawansowanego systemu e-commerce,
+                dostarczymy rozwiązanie idealnie dopasowane do Twoich potrzeb.
+              </div>
             </div>
             <div className="block md:hidden px-8 text-sm sm:text-[20px] pb-10  lg:text-xl  text-white/60 leading-7 md:leading-tight">
               Dzięki wykorzystaniu najnowszych <br /> technologii zapewniamy
@@ -31,7 +33,7 @@ const CardWebDev = () => {
             </div>
           </div>
           <div className="lg:flex hidden h-full items-end justify-end pr-8 pb-4">
-            <img src={Image} className="w-[80%]"></img>
+            <img src={Image} className="w-[80%] py-6 px-12"></img>
           </div>
         </div>
       </div>

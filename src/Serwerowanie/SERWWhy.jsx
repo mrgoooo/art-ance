@@ -45,71 +45,71 @@ function SERWWhy() {
           </p>
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2   pt-8">
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center ">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px] text-white">
                   Bezpieczeństwo
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 Ochrona przed atakami, firewall, regularne aktualizacje systemu.
               </p>
             </div>
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px] text-white">
                   Wydajność
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 Optymalizacja szybkości i stabilności, zasoby dopasowane do
                 potrzeb Twojej strony.
               </p>
             </div>
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center ">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px] text-white">
                   Niezawodność
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 Stałe monitorowanie dostępności i szybka reakcja na ewentualne
                 problemy.
               </p>
             </div>
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center ">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px]  text-white">
                   Oszczędność czasu
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 My zajmujemy się administrowaniem serwerem, a Ty możesz skupić
                 się na biznesie.
               </p>
             </div>
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px] text-white">
                   Wsparcie eksperckie
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 więcej odwiedzin bez kosztów reklam.
               </p>
             </div>
             <div className=" p-3 flex flex-col h-full">
-              <div className="flex items-center mb-2">
-                <ArrowIcon className="w-6 h-6 md:w-12 md:h-12 mr-3" />
+              <div className="flex items-center">
+                <ArrowIcon className="w-8 h-8 md:w-12 md:h-12 " />
                 <h3 className="text-lg md:text-[26px] lg:text-[32px] text-white">
                   Elastyczność
                 </h3>
               </div>
-              <p className="text-gray-700 text-[10px] md:text-[13px] text-white/60">
+              <p className="text-gray-700 text-xs md:text-[13px] text-white/60">
                 serwer pozwala na natychmiastowe aktualizacje i modyfikacje
                 strony.
               </p>

@@ -8,7 +8,7 @@ function CardUX() {
         <div className=" pt-8 px-8 text-black text-4xl font-normal  ">
           UX/UI Design
         </div>
-        <div className="hidden md:block pt-4 px-8 w-full text-black/70 text-xl font-normal  leading-7 z-10">
+        <div className="hidden md:block pt-4 px-8 w-full text-black/70 lg:text-base font-normal  leading-7 z-10">
           Spersonalizowane projekty dopasowane <br /> do potrzeb klienta łączą
           estetykę z <br /> funkcjonalnością, gwarantując intuicyjną <br />{" "}
           nawigację i pozytywne wrażenia na <br /> każdym kroku interakcji z
@@ -31,7 +31,7 @@ function CardUX() {
       </div>
       <img
         src={Image}
-        className="hidden sm:block sm:h-[260px] lg:h-[360px] xl:h-[410px] 2xl:h-[450px] absolute bottom-0 right-0 "
+        className="hidden sm:block sm:h-[260px] lg:h-[360px] xl:h-[410px] 2xl:h-[450px] absolute bottom-0 right-4 "
       ></img>
     </div>
   );

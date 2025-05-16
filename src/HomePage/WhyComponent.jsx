@@ -25,7 +25,7 @@ const WhyComponent = () => {
     transition: "background 0.1s ease-out",
   };
   return (
-    <header className="w-full hidden relative h-screen bg-black  lg:flex flex-col  items-center">
+    <header className="w-full hidden relative h-screen bg-black  lg:flex flex-col  items-center ">
       <div className="w-3/4 z-20">
         <NormalLine />
       </div>
