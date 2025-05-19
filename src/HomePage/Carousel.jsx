@@ -174,7 +174,7 @@ const Carousel = () => {
                           />
                         </svg>
                       </div>
-                      <p className="pt-10 text-black   md:text-white/60 text-lg sm:text-2xl">
+                      <p className=" pt-4 sm:pt-10 text-black   sm:text-white/60 text-[15px] sm:text-2xl">
                         {slide.description}
                       </p>
                       {/* Add additional buttons or elements if needed */}

@@ -166,7 +166,7 @@ const OpinionsCarousel = () => {
 
                   <div className="flex justify-center mb-10 ">
                     {"                 "}
-                    <p className="ml-4 text-xl md:text-3xl text-gray-600 text-pretty">
+                    <p className="ml-4 text-sm sm:lg md:text-3xl text-gray-600 sm:text-white/80 text-pretty">
                       {slide.description}
                     </p>
                   </div>

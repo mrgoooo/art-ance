@@ -2,37 +2,36 @@ import React, { useState, useEffect, useRef } from "react";
 
 const slides = [
   {
-    step: "Step 1",
-    title: "Onboarding",
+    step: "Step 1.",
+    title: "Szybki Start",
     description:
-      "Współpracę zaczynamy od analizy potrzeb biznesowych klienta oraz wymagań SEO, opracowujemy mapę witryny i wstępne szkice (wireframes). Następnie umawiamy się na spotkanie onboardingowe, które pozwala dopracować szczegóły.",
-    image:
-      "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    cta: "Learn More",
+      "Zaczynamy od rozmowy – konkretnej, bez ogólników.\nPoznajemy Twoją markę, użytkowników i cel. Działamy szybko, bo wiemy, że czas to zasób – nie marnujemy go na niekończące się briefy. Chcemy od razu wejść w sedno i zacząć działać.",
+    image: "",
+    cta: "",
   },
   {
-    step: "Step 2",
-    title: "Design Projektu",
+    step: "Step 2.",
+    title: "Projekt z Charakterem",
     description:
-      "Korzystając z zebranych informacji, przygotowujemy wstępny brief projektowy i opracowujemy projekt graficzny. Po akceptacji przez klienta przechodzimy do fazy deweloperskiej.",
-    image: "https://picsum.photos/id/240/800/400",
-    cta: "Shop Now",
+      "Tworzymy szkice, które mają nie tylko wyglądać, ale działać.\nNasze makiety to nie sztywne ramki – to dynamiczne prototypy, które testujemy i dopasowujemy razem z Tobą. Dzięki temu masz realny wpływ na efekt końcowy od pierwszych dni pracy.",
+    image: "",
+    cta: "",
   },
   {
-    step: "Step 3",
-    title: "Rozwój",
+    step: " Step 3.",
+    title: "UI z Pomysłem",
     description:
-      "Realizujemy projekt techniczny, przeprowadzając testy jakości (QA) na każdym etapie – od pierwszej wersji po końcowe poprawki. Optymalizujemy stronę pod kątem SEO, technikaliów i szybkości działania.",
-    image: "https://picsum.photos/id/240/800/400", // Example with local image require
-    cta: "Register Today",
+      "Nie kopiujemy trendów – tworzymy je.\nKażdy element wizualny dopasowujemy do Twojej marki. Projektujemy responsywnie, przejrzyście i intuicyjnie. Twój użytkownik wie, gdzie kliknąć – i chce wrócić. Wszystko po to, by Twoja strona nie tylko przyciągała wzrok, ale też konwertowała.",
+    image: "",
+    cta: "",
   },
   {
-    step: "Step 4",
-    title: "Publikowanie",
+    step: "Step 4.",
+    title: "Ostatni Szlif",
     description:
-      "Po przedstawieniu gotowej strony klientowi i dokonaniu ostatecznych poprawek następuje publikacja witryny. Podpisujemy umowy na dalsze wsparcie techniczne oraz przesyłamy podziękowania za współpracę.",
-    image: "https://picsum.photos/id/240/800/400", // Example with local image require
-    cta: "Register Today",
+      "Sprawdzamy, testujemy, dopinamy – razem.\nKończymy dopiero wtedy, gdy wszystko działa tak, jak powinno. UX i UI to dla nas proces, nie punkt na liście. Przekazujemy Ci gotowy, dopracowany produkt, który możesz z dumą pokazać światu. A jeśli chcesz iść dalej – jesteśmy obok.",
+    image: "",
+    cta: "",
   },
 ];
 
