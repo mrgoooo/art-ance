@@ -41,7 +41,7 @@ function REHero() {
             />
           </svg>
         </div>
-        <div className="w-[514px] h-[100px] md:h-[62px] justify-center text-black/60 text-xs sm:text-xl font-normal leading-loose pb-8 pt-8 sm:pt-4 ">
+        <div className="w-[514px] h-[100px] md:h-[62px] justify-center text-black/60 text-xs sm:text-xl font-normal  leading-tight  mb-0 lg:mb-8 pt-8 sm:pt-4 ">
           Każdy projekt to dla nas unikalna historia, w której kreatywność
           spotyka się z technologią.
         </div>

@@ -60,7 +60,7 @@ const RECard = () => {
     const dist = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
     const maxDist = Math.sqrt(Math.pow(centerX, 2) + Math.pow(centerY, 2));
 
-    const opacity = 1 - Math.min(dist / maxDist, 1);
+    const opacity = Math.abs(1 - Math.min((dist * dist) / 150 / maxDist, 1));
     setContentOpacity(opacity);
   };
 
@@ -69,9 +69,8 @@ const RECard = () => {
   };
 
   const handleClick = () => {
-    window.open(projects[0].externalUrl, "_blank");
+    window.open("https://body-tennis.pl/pl", "_blank");
   };
-
   return (
     <motion.div
       ref={cardRef}
