@@ -12,7 +12,7 @@ const CardWebDev = () => {
               Web Development
             </div>
             <div className="w-full ">
-              <div className="w-[90%] w-hidden md:block px-8 text-[20px] pb-10 lg:pb-0 lg:text-base  text-white/60 leading-none">
+              <div className="w-[90%] hidden md:block px-8 text-[20px] pb-10 lg:pb-0 lg:text-base  text-white/60 leading-none">
                 Dzięki wykorzystaniu najnowszych technologii zapewniamy szybkie
                 działanie i pełną kompatybilność na wszystkich urządzeniach.
                 Niezależnie od tego, czy potrzebujesz prostej witryny

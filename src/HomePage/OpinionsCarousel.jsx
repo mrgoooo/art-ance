@@ -63,7 +63,7 @@ const OpinionsCarousel = () => {
 
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 7000); // Zmienia co 3 sekundy (3000 ms)
+    }, 20000); // Zmienia co 3 sekundy (3000 ms)
   };
 
   const handleTouchStart = (e) => {

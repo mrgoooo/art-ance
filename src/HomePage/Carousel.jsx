@@ -98,7 +98,7 @@ const Carousel = () => {
 
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 10000); // Zmienia co 3 sekundy (3000 ms)
+    }, 40000); // Zmienia co 3 sekundy (3000 ms)
   };
 
   const handleTouchStart = (e) => {
@@ -174,7 +174,7 @@ const Carousel = () => {
                           />
                         </svg>
                       </div>
-                      <p className=" pt-10 text-white/60 text-lg sm:text-2xl">
+                      <p className="pt-10 text-black   md:text-white/60 text-lg sm:text-2xl">
                         {slide.description}
                       </p>
                       {/* Add additional buttons or elements if needed */}
