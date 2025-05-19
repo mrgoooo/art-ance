@@ -9,8 +9,12 @@ import Navbar from "../Components/Navbar";
 import LastFooter from "../Components/LastFooter";
 import ONComputer from "./ONComputer";
 import ONWhoWeAre from "./ONWhoWeAre";
+import { useEffect } from "react";
 
 function ONas() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full bg-black text-white flex flex-col">
       {/* Navbar */}

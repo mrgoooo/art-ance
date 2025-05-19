@@ -1,5 +1,6 @@
 import NormalLine from "../HomePage/NormalLine";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function LastFooter() {
   return (
@@ -7,31 +8,39 @@ function LastFooter() {
       <NormalLine></NormalLine>
 
       {/* Nawigacja i kontakt */}
-      <div className="flex flex-wrap justify-between mt-10 text-gray-400 ">
-        <div className="min-w-36   sm:w-auto pb-4 flex flex-col items-center pt-8">
-          <div className="w-1/2 ">
+      <div className="flex flex-wrap justify-between mt-10 text-gray-400">
+        <div className="min-w-36 sm:w-auto pb-4 flex flex-col items-center pt-8">
+          <div className="w-1/2">
             <h4 className="text-white font-semibold pb-4">Oferta</h4>
-            <p>Produkty</p>
+            <Link to="/oferta">Produkty</Link>
           </div>
         </div>
+
         <div className="min-w-36 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <div className="w-1/2">
             <h4 className="text-white font-semibold pb-4">Projekty</h4>
-            <p>Realizacje</p>
+            <Link to="/realizacje">Realizacje</Link>
           </div>
         </div>
+
         <div className="min-w-36 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <div className="w-1/2">
             <h4 className="text-white font-semibold pb-4">Firma</h4>
-            <p className="pb-2">O nas</p>
-            <p>Kontakt</p>
+            <Link className="block pb-2 " to="/o-nas">
+              O nas
+            </Link>
+            <Link className="block" to="/kontakt">
+              Kontakt
+            </Link>
           </div>
         </div>
+
         <div className="min-w-36 sm:w-auto pb-4 flex flex-col items-center pt-8">
           <div className="w-1/2">
             <h4 className="text-white font-semibold pb-4">Portal</h4>
-            <p className="pb-2">ArtanceFriends</p>
-            <p>Login</p>
+            <Link className="pb-2 block" to="/artance-friends">
+              ArtanceFriends
+            </Link>
           </div>
         </div>
       </div>

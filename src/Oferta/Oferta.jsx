@@ -7,8 +7,12 @@ import CardWebMan from "./CardWebMan";
 import Pytania from "./Pytania";
 import Navbar from "../Components/Navbar";
 import LastFooter from "../Components/LastFooter";
+import { useEffect } from "react";
 
 const Oferta = ({ onNavigate }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full bg-black text-white flex flex-col">
       {/* Navbar */}
