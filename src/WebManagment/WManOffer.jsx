@@ -41,11 +41,16 @@ export default function WManOffer() {
       <h2 className="text-center text-2xl tracking-tighter mb-8">
         Porównaj Ofertę:
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0 max-w-6xl mx-auto px-4">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className=" bg-white lg:bg-transparent lg:border-2 border-black/30 rounded-2xl  p-6 text-center flex flex-col justify-between"
+            className={
+              "bg-white lg:bg-transparent rounded-2xl lg:rounded-none p-6 text-center flex flex-col justify-between " +
+              (index === 1
+                ? " lg:border-l-2 lg:border-r-2 border-black/30"
+                : "")
+            }
           >
             <div>
               <h3 className="text-xl md:text-3xl tracking-tighter   mb-6">
