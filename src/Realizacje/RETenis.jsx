@@ -35,8 +35,8 @@ function RETenis() {
                   <g id="Frame">
                     <path
                       id="Vector"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M29.9982 10H9.99819V13.3333H24.3086L9.30859 28.3334L11.6656 30.6904L26.6649 15.6912V30H29.9982V10Z"
                       fill="#03BD7F"
                     />

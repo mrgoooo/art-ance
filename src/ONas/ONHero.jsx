@@ -27,8 +27,8 @@ function ONHero() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M21.1648 12.2079L12.6795 3.72266L11.2653 5.13687L17.3363 11.2079H4.6084V13.2079H17.3364L11.2653 19.279L12.6795 20.6932L21.1648 12.2079Z"
                 fill="black"
               />
