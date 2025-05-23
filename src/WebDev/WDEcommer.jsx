@@ -85,7 +85,7 @@ function WDEcommer() {
         ></img>
       </div>
 
-      <div className="w-full mx-auto  md:py-8 rounded-2xl bg-white md:bg-opacity-100 bg-opacity-15 md:mt-10 flex flex-col">
+      <div className="w-full mx-auto  md:py-8 rounded-2xl lg:bg-white md:bg-opacity-100  md:mt-10 flex flex-col">
         <div className="flex justify-start  md:justify-end md:pb-14">
           <div className="hidden lg:block lg:w-[80%] xl:w-[60%] ">
             {" "}
@@ -96,34 +96,32 @@ function WDEcommer() {
         </div>
         <div className=" grid grid-cols-1 lg:grid-cols-2  rounded-2xl relative">
           {/* Pakiet Na Start */}
-          <div className="hidden lg:block absolute left-0 top-[10%] h-[80%] border-l-2 border-black"></div>
-          <div className="flex-1 md:bg-white p-4 bg-opacity-30   md:p-8 rounded-2xl  lg:rounded-none">
-            <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3">
+
+          <div className="flex-1 md:bg-white bg-black bg-opacity-30 rounded-2xl  lg:rounded-none  lg:pb-0 ">
+            <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3 pt-4">
               Na Start
             </h2>
             <p className="text-center text-xs md:text-black text-white/80 opacity-60 md:text-xl  mt-2 mb-4">
               Idealny dla małych firm, freelancerów i startupów.
             </p>
-            <div className="mb-6 mt-14">
-              <div className="space-y-2">
-                <ul className="md:pl-6 md:text-black sm:text-2xl  text-center text-white/80 text-xs">
-                  <li className="border-t border-white/20  py-6">
-                    3 podstrony
-                  </li>
-                  <li className="border-t border-white/20  py-6">
-                    Responsywny design
-                  </li>
-                  <li className="border-t border-white/20 py-6">
-                    Optymalizacja SEO
-                  </li>
-                  <li className="border-t border-white/20 py-6">
-                    Integracja z Social Media
-                  </li>
-                  <li className="border-t border-b border-white/20 py-6">
-                    Podstawowa optymalizacja szybkości
-                  </li>
-                </ul>
-              </div>
+            <div className="mb-6 mt-6 md:mt-14">
+              <ul className="md:pl-6 md:text-black sm:text-2xl  text-center text-white/80 text-xs pt-4 ">
+                <li className="border-t border-white/20 mx-6 py-6">
+                  3 podstrony
+                </li>
+                <li className="border-t border-white/20 mx-6 py-6">
+                  Responsywny design
+                </li>
+                <li className="border-t border-white/20 mx-6 py-6">
+                  Optymalizacja SEO
+                </li>
+                <li className="border-t border-white/20 mx-6 py-6">
+                  Integracja z Social Media
+                </li>
+                <li className="border-t border-b border-white/20 mx-6 py-6">
+                  Podstawowa optymalizacja szybkości
+                </li>
+              </ul>
             </div>
 
             <div className="text-center pt-7 md:pt-14 pb-7">
@@ -134,33 +132,33 @@ function WDEcommer() {
           </div>
 
           {/* Pakiet Plus */}
-          <div className="flex-1 bg-white bg-opacity-5 md:bg-white p-4 md:p-8 border-black  rounded-2xl lg:rounded-none flex flex-col justify-between lg:self-center">
-            <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3">
+          <div className="flex-1 bg-black bg-opacity-30 md:bg-white  rounded-2xl lg:rounded-none flex flex-col justify-between lg:self-center mt-8 lg:mt-0">
+            <h2 className="text-center text-3xl md:text-5xl text-white md:text-gray-800 pb-3 pt-4">
               Plus
             </h2>
             <p className="text-center text-xs md:text-black text-white/80 opacity-60 md:text-xl mt-2 mb-4">
               Dla wymagających klientów i rozwijających się firm.
             </p>
-            <div className="mb-6 mt-14">
+            <div className="mb-6 mt-6 md:mt-14 lg:border-l-2 border-black  w-full">
               <ul className="md:pl-6 md:text-black sm:text-2xl text-center text-white/80 text-xs">
-                <li className="border-t border-white/20 py-6">
+                <li className="border-t border-white/20 mx-6 py-6">
                   Rozbudowana struktura strony
                 </li>
-                <li className="border-t border-white/20 py-6">
+                <li className="border-t border-white/20 mx-6 py-6">
                   Zaawansowana optymalizacja SEO
                 </li>
-                <li className="border-t border-white/20 py-6">
+                <li className="border-t border-white/20 mx-6 py-6">
                   Integracja z systemami płatności i API
                 </li>
-                <li className="border-t border-white/20 py-6">
+                <li className="border-t border-white/20 mx-6 py-6">
                   Indywidualny design
                 </li>
-                <li className="border-t border-b border-white/20 py-6">
+                <li className="border-t border-b border-white/20  mx-6 py-6">
                   Pełne wsparcie techniczne
                 </li>
               </ul>
             </div>
-            <div className="text-center pt-7 md:pt-14 pb-4">
+            <div className="text-center pt-7 md:pt-14 pb-7 ">
               <span className="text-xl md:text-2xl text-white rounded-full bg-[#534a6f] p-2 sm:p-3 px-4 mt-6">
                 od 5000 PLN netto
               </span>
