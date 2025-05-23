@@ -11,6 +11,7 @@ import SEO from "./SEO/SEO";
 import SERW from "./Serwerowanie/SERW";
 import WMan from "./WebManagment/WMan";
 import "./App.css";
+import Friends from "./Friends/Friends";
 
 const App = () => {
   useEffect(() => {
@@ -48,6 +49,8 @@ const App = () => {
         <Route path="/realizacje" element={<REalizacje />} />
         <Route path="/o-nas" element={<ONas />} />
         <Route path="/kontakt" element={<KontaktPage />} />
+        <Route path="/artance-friends" element={<Friends />} />
+
         <Route
           path="/portal"
           element={<h2 className="text-center">Portal</h2>}

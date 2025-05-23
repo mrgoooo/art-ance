@@ -37,7 +37,7 @@ export default function WManOffer() {
   ];
 
   return (
-    <section className=" w-[95%] py-12 md:px-12  lg:bg-white rounded-2xl">
+    <section className=" w-[95%] pt-12  md:pb-12 md:px-12  lg:bg-white rounded-2xl">
       <h2 className="text-center text-2xl tracking-tighter mb-8">
         Porównaj Ofertę:
       </h2>
